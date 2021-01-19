@@ -4,13 +4,15 @@
 
 ## What is Weighted Random Selector ?
 
-WeightedSelect is an algorithm for randomly selecting elements based on their weights.
+Weighted Random Selector is an algorithm for randomly selecting elements based on their weights.
 
 For example.
 - Drop items based on rarity.
 - Events that occur with a certain probability
 
 It can be used to determine things with probability.
+
+Choice is a library that was created to make it easier to implement.
 
 Great introduction article on Weighted Random Select: https://blog.bruce-hill.com/a-faster-weighted-random-choice
 
@@ -25,7 +27,7 @@ Great introduction article on Weighted Random Select: https://blog.bruce-hill.co
 
 Download any version from releases.
 
-Releases: https://github.com/mackysoft/Modiferty/releases
+Releases: https://github.com/mackysoft/Choice/releases
 
 # <a id="usage" href="#requirements"> Usage </a>
 
