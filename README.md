@@ -20,6 +20,7 @@ Great introduction article on Weighted Random Select: https://blog.bruce-hill.co
 
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Select Algorithm](#algorithm)
 - [Author Info](#author-info)
 - [License](#license)
 
@@ -44,10 +45,10 @@ public IEnumerable<Item> SelectItems () {
 	IReadOnlyWeightedSelector<Item> weightedSelector = items
 		.ToReadOnlyWeightedSelector(weightSelector: item => item.rarity);
 	
-	for (int i = 0;i < 1000) {
+	for (int i = 0;i < 1000;i++) {
 		// Same as weightedSelector.SelectItem(Random.value)
 		Item randomSelectedItem = weightedSelector.SelectItem();
-		yiled return randomSelectedItem;
+		yield return randomSelectedItem;
 	}
 }
 ```
@@ -59,7 +60,6 @@ items
 	.Where(item => (item != null) && item.enabled)
 	.ToReadOnlyWeightedSelector(weightSelector: item => item.rarity)
 	.SelectItem();
-;
 ```
 
 
