@@ -17,6 +17,22 @@ namespace MackySoft.Choice {
 
 	}
 
+	public class WeightedSelector {
+
+		public static IReadOnlyWeightedSelector<T> Empty<T> () => EmptyWeightedSelector<T>.Instance;
+
+	}
+
+	internal sealed class EmptyWeightedSelector<T> : IReadOnlyWeightedSelector<T> {
+
+		public static EmptyWeightedSelector<T> Instance = new EmptyWeightedSelector<T>();
+
+		public T SelectItem (float value) {
+			return default;
+		}
+
+	}
+
 	public static class WeightedSelectorExtensions {
 
 		/// <summary>
