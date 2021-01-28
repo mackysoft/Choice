@@ -5,7 +5,6 @@ using System.Threading;
 using System.Runtime.CompilerServices;
 
 namespace MackySoft.Choice.Internal {
-
 	public static class ArrayPool<T> {
 
 		const int k_DefaultMaxNumberOfArraysPerBucket = 50;
@@ -25,6 +24,7 @@ namespace MackySoft.Choice.Internal {
 		/// <summary>
 		/// The array length is not always accurate.
 		/// </summary>
+		/// <exception cref="ArgumentOutOfRangeException"></exception>
 		public static T[] Rent (int minimumLength) {
 			if (minimumLength < 0) {
 				throw new ArgumentOutOfRangeException(nameof(minimumLength));
@@ -153,8 +153,6 @@ namespace MackySoft.Choice.Internal {
 		/// <summary>
 		/// <para> Convert enumerable to array. Array are returned from <see cref="ArrayPool{T}"/>. </para>
 		/// <para> The array length is not always accurate. </para>
-		/// <para> If the source cannot be cast to <see cref="IList{T}"/> or <see cref="IReadOnlyList{T}"/> or <see cref="ICollection{T}"/> or <see cref="IReadOnlyCollection{T}"/>, </para>
-		/// <para> there is a cost of creating a temporary array. </para>
 		/// </summary>
 		public static T[] ToArrayFromPool<T> (this IEnumerable<T> source) {
 			return ToArrayFromPool(source,out _);
@@ -163,8 +161,6 @@ namespace MackySoft.Choice.Internal {
 		/// <summary>
 		/// <para> Convert enumerable to array. Array are returned from <see cref="ArrayPool{T}"/>. </para>
 		/// <para> The array length is not always accurate. </para>
-		/// <para> If the source cannot be cast to <see cref="IList{T}"/> or <see cref="IReadOnlyList{T}"/> or <see cref="ICollection{T}"/> or <see cref="IReadOnlyCollection{T}"/>, </para>
-		/// <para> there is a cost of creating a temporary array. </para>
 		/// </summary>
 		/// <param name="count"> Number of elements in source. </param>
 		public static T[] ToArrayFromPool<T> (this IEnumerable<T> source,out int count) {
@@ -190,15 +186,12 @@ namespace MackySoft.Choice.Internal {
 				return ToArrayFromPoolInternal(readonlyCollection);
 			}
 
-			// If the indexer or Count property cannot be found from the source,
-			// it is necessary to create a temporary array.
-			// TODO: ArrayPool<T>.EnsureCapacity(ref T[] array,int index)
-			T[] sourceArray = source.ToArray();
-
-			count = sourceArray.Length;
-			T[] array = ArrayPool<T>.Rent(count);
-			for (int i = 0;count > i;i++) {
-				array[i] = sourceArray[i];
+			T[] array = ArrayPool<T>.Rent(32);
+			count = 0;
+			foreach (T item in source) {
+				ArrayPoolUtility.EnsureCapacity(ref array,count);
+				array[count] = item;
+				count++;
 			}
 			return array;
 		}
