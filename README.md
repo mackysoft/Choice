@@ -55,7 +55,7 @@ public IEnumerable<Item> SelectItems () {
 
 Since the `ToWeightedSelector` function is defined as an extension of `IEnumerable<T>`, it can be connected from the LINQ syntax.
 
-```
+```cs
 items
 	.Where(item => (item != null) && item.enabled)
 	.ToWeightedSelector(weightSelector: item => item.rarity)
@@ -67,7 +67,7 @@ items
 
 When creating a WeightedSelector, you can specify the `IWeightedSelectMethod`.
 
-```
+```cs
 var weightedSelector = items.ToWeightedSelector(
 	weightSelector: item => item.rarity,
 	method: WeightedSelectMethod.Binary // Use the binary search algorithm.
