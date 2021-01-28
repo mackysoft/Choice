@@ -2,9 +2,9 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
-using MackySoft.Choice.Internal;
 
-namespace MackySoft.Choice.Tests {
+namespace MackySoft.Choice.Internal.Tests {
+
 	public class EnumerableConversionTests {
 
 		class Item {
@@ -13,7 +13,7 @@ namespace MackySoft.Choice.Tests {
 		
 		[Test]
 		public void EnumerableToTemporaryArray () {
-			Item[] source = GenerateItemEnumerable().ToArray();
+			Item[] source = GenerateEnumerable().ToArray();
 
 			EnumerableConversion.EnumerableToTemporaryArray(source.Select(x => x),x => x.weight,out var items,out var weights);
 		
@@ -29,7 +29,7 @@ namespace MackySoft.Choice.Tests {
 
 		[Test]
 		public void ReadOnlyListToTemporaryArray () {
-			Item[] source = GenerateItemEnumerable().ToArray();
+			Item[] source = GenerateEnumerable().ToArray();
 
 			EnumerableConversion.EnumerableToTemporaryArray(source,x => x.weight,out var items,out var weights);
 
@@ -45,7 +45,7 @@ namespace MackySoft.Choice.Tests {
 
 		[Test]
 		public void ListToTemporaryArray () {
-			List<Item> source = GenerateItemEnumerable().ToList();
+			List<Item> source = GenerateEnumerable().ToList();
 
 			EnumerableConversion.EnumerableToTemporaryArray(source,x => x.weight,out var items,out var weights);
 
@@ -93,7 +93,7 @@ namespace MackySoft.Choice.Tests {
 			weights.Dispose();
 		}
 
-		static IEnumerable<Item> GenerateItemEnumerable () {
+		static IEnumerable<Item> GenerateEnumerable () {
 			for (int i = 0;100 > i;i++) {
 				yield return new Item { weight = Random.value };
 			}
