@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MackySoft.Choice.Internal {
 
-	internal static class EnumerableConversion {
+	public static class EnumerableConversion {
 
 		internal static class IdentityFunction<T> {
 			public static readonly Func<T,T> Instance = x => x;

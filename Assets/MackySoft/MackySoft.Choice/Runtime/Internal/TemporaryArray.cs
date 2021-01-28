@@ -69,9 +69,6 @@ namespace MackySoft.Choice.Internal {
 		/// Set item to current length and increase length.
 		/// </summary>
 		public void Add (T item) {
-			if (m_Length >= m_Array.Length) {
-				return;
-			}
 			ArrayPoolUtility.EnsureCapacity(ref m_Array,m_Length);
 			m_Array[m_Length] = item;
 			m_Length++;
