@@ -24,9 +24,9 @@ namespace MackySoft.Choice {
 	public static class WeightedSelectorExtensions {
 
 		/// <summary>
-		/// Returns a random selected item from weights.
+		/// Returns a random selected item from weights using <see cref="UnityEngine.Random.value"/>.
 		/// </summary>
-		public static T SelectItem<T> (this IReadOnlyWeightedSelector<T> weightedSelector) {
+		public static T SelectItemWithUnityRandom<T> (this IReadOnlyWeightedSelector<T> weightedSelector) {
 			if (weightedSelector == null) {
 				throw new ArgumentNullException(nameof(weightedSelector));
 			}

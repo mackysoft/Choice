@@ -42,24 +42,24 @@ public class Item {
 public Item[] items;
 
 public IEnumerable<Item> SelectItems () {
-	IReadOnlyWeightedSelector<Item> weightedSelector = items
-		.ToReadOnlyWeightedSelector(weightSelector: item => item.rarity);
+	IWeightedSelector<Item> weightedSelector = items
+		.ToWeightedSelector(item => item.rarity);
 	
 	for (int i = 0;i < 1000;i++) {
-		// Same as weightedSelector.SelectItem(Random.value)
-		Item randomSelectedItem = weightedSelector.SelectItem();
+		// Same as weightedSelector.SelectItem(UnityEngine.Random.value)
+		Item randomSelectedItem = weightedSelector.SelectItemWithUnityRandom();
 		yield return randomSelectedItem;
 	}
 }
 ```
 
-Since the `ToReadOnlyWeightedSelector` function is defined as an extension of `IEnumerable<T>`, it can be connected from the LINQ syntax.
+Since the `ToWeightedSelector` function is defined as an extension of `IEnumerable<T>`, it can be connected from the LINQ syntax.
 
 ```
 items
 	.Where(item => (item != null) && item.enabled)
-	.ToReadOnlyWeightedSelector(weightSelector: item => item.rarity)
-	.SelectItem();
+	.ToWeightedSelector(weightSelector: item => item.rarity)
+	.SelectItemWithUnityRandom();
 ```
 
 
@@ -68,7 +68,7 @@ items
 When creating a WeightedSelector, you can specify the `IWeightedSelectMethod`.
 
 ```
-var weightedSelector = items.ToReadOnlyWeightedSelector(
+var weightedSelector = items.ToWeightedSelector(
 	weightSelector: item => item.rarity,
 	method: WeightedSelectMethod.Binary // Use the binary search algorithm.
 );
