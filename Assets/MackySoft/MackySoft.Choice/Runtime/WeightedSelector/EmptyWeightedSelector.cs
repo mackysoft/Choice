@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace MackySoft.Choice {
+
 	internal sealed class EmptyWeightedSelector<T> : IWeightedSelector<T> {
 
 		public static readonly EmptyWeightedSelector<T> Instance = new EmptyWeightedSelector<T>();
@@ -13,9 +14,9 @@ namespace MackySoft.Choice {
 
 		public int Count => 0;
 
-		ICollection<T> IDictionary<T,float>.Keys => throw new System.NotImplementedException();
+		ICollection<T> IDictionary<T,float>.Keys => EmptyCollection<T>.Instance;
 
-		ICollection<float> IDictionary<T,float>.Values => throw new System.NotImplementedException();
+		ICollection<float> IDictionary<T,float>.Values => EmptyCollection<float>.Instance;
 
 		bool ICollection<KeyValuePair<T,float>>.IsReadOnly => false;
 
@@ -70,5 +71,45 @@ namespace MackySoft.Choice {
 		public bool Remove (KeyValuePair<T,float> item) {
 			return false;
 		}
+
+		
 	}
+
+	internal sealed class EmptyCollection<T> : ICollection<T> {
+
+		public static readonly EmptyCollection<T> Instance = new EmptyCollection<T>();
+
+		public int Count => 0;
+
+		public bool IsReadOnly => false;
+
+		public void Add (T item) {
+			
+		}
+
+		public bool Remove (T item) {
+			return false;
+		}
+
+		public void Clear () {
+			
+		}
+
+		public bool Contains (T item) {
+			return false;
+		}
+
+		public void CopyTo (T[] array,int arrayIndex) {
+			
+		}
+
+		public IEnumerator<T> GetEnumerator () {
+			return Enumerable.Empty<T>().GetEnumerator();
+		}
+
+		IEnumerator IEnumerable.GetEnumerator () {
+			return GetEnumerator();
+		}
+	}
+
 }
