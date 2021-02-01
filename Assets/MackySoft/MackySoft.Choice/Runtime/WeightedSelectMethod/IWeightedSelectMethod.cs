@@ -1,4 +1,5 @@
 ﻿using System;
+using MackySoft.Choice.Internal;
 
 namespace MackySoft.Choice {
 
@@ -14,7 +15,7 @@ namespace MackySoft.Choice {
 		/// </param>
 		/// <returns> Selected index from weights. </returns>
 		/// <exception cref="ArgumentNullException"></exception>
-		int SelectIndex (float[] weights,float value);
+		int SelectIndex (TemporaryArray<float> weights,float value);
 
 	}
 

@@ -13,40 +13,46 @@ namespace MackySoft.Choice {
 
 		public static readonly BinaryWeightedSelectMethod Instance = new BinaryWeightedSelectMethod();
 
-		public int SelectIndex (float[] weights,float value) {
-			if (weights == null) {
-				throw new ArgumentNullException(nameof(weights));
-			}
+		public int SelectIndex (TemporaryArray<float> weights,float value) {
+			CumulativeSum(weights,out var runningTotals,out var indicies);
+			
+			using (runningTotals)
+			using (indicies) {
+				float targetDistance = value * runningTotals[runningTotals.Length - 1];
+				int low = 0;
+				int high = runningTotals.Length;
 
-			using TemporaryArray<float> runningTotals = CumulativeSum(weights);
-
-			float targetDistance = value * runningTotals[runningTotals.Length - 1];
-			int low = 0;
-			int high = weights.Length;
-
-			while (low < high) {
-				int mid = (int)Math.Round((low + high) / 2f);
-				float distance = runningTotals[mid];
-				if (distance < targetDistance) {
-					low = mid + 1;
-				} else if (distance > targetDistance) {
-					high = mid;
-				} else {
-					return mid;
+				while (low < high) {
+					int mid = (int)Math.Floor((low + high) / 2f);
+					float distance = runningTotals[mid];
+					if (distance < targetDistance) {
+						low = mid + 1;
+					} else if (distance > targetDistance) {
+						high = mid;
+					} else {
+						return indicies[mid];
+					}
 				}
-			}
 
-			return low;
+				return indicies[low];
+			}
 		}
 
-		static TemporaryArray<float> CumulativeSum (float[] values) {
-			var results = TemporaryArray<float>.Create(values.Length);
+		static void CumulativeSum (TemporaryArray<float> weights,out TemporaryArray<float> runningTotals,out TemporaryArray<int> indicies) {
+			runningTotals = TemporaryArray<float>.CreateAsList(weights.Length);
+			indicies = TemporaryArray<int>.Create(weights.Length);
 			float sum = 0f;
-			for (int i = 0;i < results.Length;i++) {
-				sum += results[i];
-				results[i] = sum;
+			int nonZeroIteration = 0;
+			for (int i = 0;i < indicies.Length;i++) {
+				float weight = weights[i];
+				if (weight <= 0f) {
+					continue;
+				}
+				sum += weight;
+				runningTotals.Add(sum);
+				indicies[nonZeroIteration] = i;
+				nonZeroIteration++;
 			}
-			return results;
 		}
 
 	}

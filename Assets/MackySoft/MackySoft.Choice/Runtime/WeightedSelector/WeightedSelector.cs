@@ -40,7 +40,6 @@ namespace MackySoft.Choice {
 			m_Method = method;
 		}
 
-
 		internal WeightedSelector (TemporaryArray<TItem> items,TemporaryArray<float> weights,IWeightedSelectMethod method) {
 			if (items.Length != weights.Length) {
 				throw new ArgumentException();
@@ -94,7 +93,7 @@ namespace MackySoft.Choice {
 		}
 
 		public TItem SelectItem (float value) {
-			int index = m_Method.SelectIndex(m_Weights.Array,value);
+			int index = m_Method.SelectIndex(m_Weights,value);
 			return (index >= 0) ? m_Items[index] : default;
 		}
 

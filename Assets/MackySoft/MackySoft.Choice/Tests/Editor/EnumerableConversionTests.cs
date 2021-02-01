@@ -1,25 +1,21 @@
 using System.Linq;
 using System.Collections.Generic;
-using UnityEngine;
 using NUnit.Framework;
+using MackySoft.Choice.Tests;
 
 namespace MackySoft.Choice.Internal.Tests {
 
 	public class EnumerableConversionTests {
 
-		class Item {
-			public float weight;
-		}
-		
 		[Test]
 		public void EnumerableToTemporaryArray () {
-			Item[] source = GenerateEnumerable().ToArray();
+			ItemEntry[] source = ItemEnumerableGenerator.GenerateEnumerable(100).ToArray();
 
-			EnumerableConversion.EnumerableToTemporaryArray(source.Select(x => x),x => x.weight,out var items,out var weights);
+			EnumerableConversion.EnumerableToTemporaryArray(source.Select(x => x),x => x.item,x => x.weight,out var items,out var weights);
 		
 			for (int i = 0;source.Length > i;i++) {
 				var element = source[i];
-				Assert.AreEqual(element,items[i]);
+				Assert.AreEqual(element.item,items[i]);
 				Assert.AreEqual(element.weight,weights[i]);
 			}
 
@@ -29,13 +25,13 @@ namespace MackySoft.Choice.Internal.Tests {
 
 		[Test]
 		public void ReadOnlyListToTemporaryArray () {
-			Item[] source = GenerateEnumerable().ToArray();
+			ItemEntry[] source = ItemEnumerableGenerator.GenerateEnumerable(100).ToArray();
 
-			EnumerableConversion.EnumerableToTemporaryArray(source,x => x.weight,out var items,out var weights);
+			EnumerableConversion.EnumerableToTemporaryArray(source,x => x.item,x => x.weight,out var items,out var weights);
 
 			for (int i = 0;source.Length > i;i++) {
 				var element = source[i];
-				Assert.AreEqual(element,items[i]);
+				Assert.AreEqual(element.item,items[i]);
 				Assert.AreEqual(element.weight,weights[i]);
 			}
 
@@ -45,13 +41,13 @@ namespace MackySoft.Choice.Internal.Tests {
 
 		[Test]
 		public void ListToTemporaryArray () {
-			List<Item> source = GenerateEnumerable().ToList();
+			List<ItemEntry> source = ItemEnumerableGenerator.GenerateEnumerable(100).ToList();
 
-			EnumerableConversion.EnumerableToTemporaryArray(source,x => x.weight,out var items,out var weights);
+			EnumerableConversion.EnumerableToTemporaryArray(source,x => x.item,x => x.weight,out var items,out var weights);
 
 			for (int i = 0;source.Count > i;i++) {
 				var element = source[i];
-				Assert.AreEqual(element,items[i]);
+				Assert.AreEqual(element.item,items[i]);
 				Assert.AreEqual(element.weight,weights[i]);
 			}
 
@@ -61,7 +57,7 @@ namespace MackySoft.Choice.Internal.Tests {
 
 		[Test]
 		public void DictionaryToTemporaryArray () {
-			Dictionary<Item,float> source = GenerateDictionary().ToDictionary(p => p.Key,p => p.Value);
+			Dictionary<Item,float> source = ItemEnumerableGenerator.GenerateDictionary(100).ToDictionary(p => p.Key,p => p.Value);
 
 			EnumerableConversion.DictionaryToTemporaryArray(source,out var items,out var weights);
 
@@ -78,7 +74,7 @@ namespace MackySoft.Choice.Internal.Tests {
 
 		[Test]
 		public void DictionaryEnumerableToTemporaryArray () {
-			Dictionary<Item,float> source = GenerateDictionary().ToDictionary(p => p.Key,p => p.Value);
+			Dictionary<Item,float> source = ItemEnumerableGenerator.GenerateDictionary(100).ToDictionary(p => p.Key,p => p.Value);
 
 			EnumerableConversion.DictionaryToTemporaryArray(source.Select(x => x),out var items,out var weights);
 
@@ -91,18 +87,6 @@ namespace MackySoft.Choice.Internal.Tests {
 
 			items.Dispose();
 			weights.Dispose();
-		}
-
-		static IEnumerable<Item> GenerateEnumerable () {
-			for (int i = 0;100 > i;i++) {
-				yield return new Item { weight = Random.value };
-			}
-		}
-
-		static IEnumerable<KeyValuePair<Item,float>> GenerateDictionary () {
-			for (int i = 0;100 > i;i++) {
-				yield return new KeyValuePair<Item,float>(new Item(),Random.value);
-			}
 		}
 
 	}
