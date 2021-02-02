@@ -25,6 +25,8 @@ Great introduction article on Weighted Random Select: https://blog.bruce-hill.co
   - [ToWeightedSelector Overloads](#toweightedselector-overloads)
   - [LINQ](#linq)
   - [Algorithms](#algorithms)
+    - [Linear Scan](#linear-scan)
+    - [Binary Search](#binary-search)
 - [📔 Author Info](#author-info)
 - [📜 License](#license)
 
@@ -156,13 +158,13 @@ All `ToWeightedSelector` methods can specify `IWeightedSelectMethod`.
 If this is not specified, the linear scan algorithm will be used automatically.
 
 
-### <a id="linear" href="#linear"> Linear Scan (`WeightedSelectMethod.Linear`) </a>
+### <a id="linear-scan" href="#linear-scan"> Linear Scan (`WeightedSelectMethod.Linear`) </a>
 
 The simplest algorithm that walks linearly along the weights.
 This method is an `O(n)` operation, where `n` is number of weights.
 
 
-### <a id="binary" href="#binary"> Binary Search (`WeightedSelectMethod.Binary`) </a>
+### <a id="binary-search" href="#binary-search"> Binary Search (`WeightedSelectMethod.Binary`) </a>
 
 The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights.
 
