@@ -1,0 +1,462 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MackySoft.Choice
+  name: MackySoft.Choice
+  href: api/MackySoft.Choice.html
+  commentId: N:MackySoft.Choice
+  fullName: MackySoft.Choice
+  nameWithType: MackySoft.Choice
+- uid: MackySoft.Choice.IReadOnlyWeightedSelector`1
+  name: IReadOnlyWeightedSelector<T>
+  href: api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html
+  commentId: T:MackySoft.Choice.IReadOnlyWeightedSelector`1
+  name.vb: IReadOnlyWeightedSelector(Of T)
+  fullName: MackySoft.Choice.IReadOnlyWeightedSelector<T>
+  fullName.vb: MackySoft.Choice.IReadOnlyWeightedSelector(Of T)
+  nameWithType: IReadOnlyWeightedSelector<T>
+  nameWithType.vb: IReadOnlyWeightedSelector(Of T)
+- uid: MackySoft.Choice.IReadOnlyWeightedSelector`1.SelectItem(System.Single)
+  name: SelectItem(Single)
+  href: api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html#MackySoft_Choice_IReadOnlyWeightedSelector_1_SelectItem_System_Single_
+  commentId: M:MackySoft.Choice.IReadOnlyWeightedSelector`1.SelectItem(System.Single)
+  fullName: MackySoft.Choice.IReadOnlyWeightedSelector<T>.SelectItem(System.Single)
+  fullName.vb: MackySoft.Choice.IReadOnlyWeightedSelector(Of T).SelectItem(System.Single)
+  nameWithType: IReadOnlyWeightedSelector<T>.SelectItem(Single)
+  nameWithType.vb: IReadOnlyWeightedSelector(Of T).SelectItem(Single)
+- uid: MackySoft.Choice.IReadOnlyWeightedSelector`1.SelectItem*
+  name: SelectItem
+  href: api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html#MackySoft_Choice_IReadOnlyWeightedSelector_1_SelectItem_
+  commentId: Overload:MackySoft.Choice.IReadOnlyWeightedSelector`1.SelectItem
+  isSpec: "True"
+  fullName: MackySoft.Choice.IReadOnlyWeightedSelector<T>.SelectItem
+  fullName.vb: MackySoft.Choice.IReadOnlyWeightedSelector(Of T).SelectItem
+  nameWithType: IReadOnlyWeightedSelector<T>.SelectItem
+  nameWithType.vb: IReadOnlyWeightedSelector(Of T).SelectItem
+- uid: MackySoft.Choice.IWeightedSelectMethod
+  name: IWeightedSelectMethod
+  href: api/MackySoft.Choice.IWeightedSelectMethod.html
+  commentId: T:MackySoft.Choice.IWeightedSelectMethod
+  fullName: MackySoft.Choice.IWeightedSelectMethod
+  nameWithType: IWeightedSelectMethod
+- uid: MackySoft.Choice.IWeightedSelectMethod.Calculate(TemporaryArray{System.Single})
+  name: Calculate(TemporaryArray<Single>)
+  href: api/MackySoft.Choice.IWeightedSelectMethod.html#MackySoft_Choice_IWeightedSelectMethod_Calculate_TemporaryArray_System_Single__
+  commentId: M:MackySoft.Choice.IWeightedSelectMethod.Calculate(TemporaryArray{System.Single})
+  name.vb: Calculate(TemporaryArray(Of Single))
+  fullName: MackySoft.Choice.IWeightedSelectMethod.Calculate(TemporaryArray<System.Single>)
+  fullName.vb: MackySoft.Choice.IWeightedSelectMethod.Calculate(TemporaryArray(Of System.Single))
+  nameWithType: IWeightedSelectMethod.Calculate(TemporaryArray<Single>)
+  nameWithType.vb: IWeightedSelectMethod.Calculate(TemporaryArray(Of Single))
+- uid: MackySoft.Choice.IWeightedSelectMethod.Calculate*
+  name: Calculate
+  href: api/MackySoft.Choice.IWeightedSelectMethod.html#MackySoft_Choice_IWeightedSelectMethod_Calculate_
+  commentId: Overload:MackySoft.Choice.IWeightedSelectMethod.Calculate
+  isSpec: "True"
+  fullName: MackySoft.Choice.IWeightedSelectMethod.Calculate
+  nameWithType: IWeightedSelectMethod.Calculate
+- uid: MackySoft.Choice.IWeightedSelectMethod.SelectIndex(TemporaryArray{System.Single},System.Single)
+  name: SelectIndex(TemporaryArray<Single>, Single)
+  href: api/MackySoft.Choice.IWeightedSelectMethod.html#MackySoft_Choice_IWeightedSelectMethod_SelectIndex_TemporaryArray_System_Single__System_Single_
+  commentId: M:MackySoft.Choice.IWeightedSelectMethod.SelectIndex(TemporaryArray{System.Single},System.Single)
+  name.vb: SelectIndex(TemporaryArray(Of Single), Single)
+  fullName: MackySoft.Choice.IWeightedSelectMethod.SelectIndex(TemporaryArray<System.Single>, System.Single)
+  fullName.vb: MackySoft.Choice.IWeightedSelectMethod.SelectIndex(TemporaryArray(Of System.Single), System.Single)
+  nameWithType: IWeightedSelectMethod.SelectIndex(TemporaryArray<Single>, Single)
+  nameWithType.vb: IWeightedSelectMethod.SelectIndex(TemporaryArray(Of Single), Single)
+- uid: MackySoft.Choice.IWeightedSelectMethod.SelectIndex*
+  name: SelectIndex
+  href: api/MackySoft.Choice.IWeightedSelectMethod.html#MackySoft_Choice_IWeightedSelectMethod_SelectIndex_
+  commentId: Overload:MackySoft.Choice.IWeightedSelectMethod.SelectIndex
+  isSpec: "True"
+  fullName: MackySoft.Choice.IWeightedSelectMethod.SelectIndex
+  nameWithType: IWeightedSelectMethod.SelectIndex
+- uid: MackySoft.Choice.IWeightedSelector`1
+  name: IWeightedSelector<T>
+  href: api/MackySoft.Choice.IWeightedSelector-1.html
+  commentId: T:MackySoft.Choice.IWeightedSelector`1
+  name.vb: IWeightedSelector(Of T)
+  fullName: MackySoft.Choice.IWeightedSelector<T>
+  fullName.vb: MackySoft.Choice.IWeightedSelector(Of T)
+  nameWithType: IWeightedSelector<T>
+  nameWithType.vb: IWeightedSelector(Of T)
+- uid: MackySoft.Choice.WeightedSelectMethod
+  name: WeightedSelectMethod
+  href: api/MackySoft.Choice.WeightedSelectMethod.html
+  commentId: T:MackySoft.Choice.WeightedSelectMethod
+  fullName: MackySoft.Choice.WeightedSelectMethod
+  nameWithType: WeightedSelectMethod
+- uid: MackySoft.Choice.WeightedSelectMethod.Binary
+  name: Binary
+  href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Binary
+  commentId: P:MackySoft.Choice.WeightedSelectMethod.Binary
+  fullName: MackySoft.Choice.WeightedSelectMethod.Binary
+  nameWithType: WeightedSelectMethod.Binary
+- uid: MackySoft.Choice.WeightedSelectMethod.Binary*
+  name: Binary
+  href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Binary_
+  commentId: Overload:MackySoft.Choice.WeightedSelectMethod.Binary
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelectMethod.Binary
+  nameWithType: WeightedSelectMethod.Binary
+- uid: MackySoft.Choice.WeightedSelectMethod.Linear
+  name: Linear
+  href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Linear
+  commentId: P:MackySoft.Choice.WeightedSelectMethod.Linear
+  fullName: MackySoft.Choice.WeightedSelectMethod.Linear
+  nameWithType: WeightedSelectMethod.Linear
+- uid: MackySoft.Choice.WeightedSelectMethod.Linear*
+  name: Linear
+  href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Linear_
+  commentId: Overload:MackySoft.Choice.WeightedSelectMethod.Linear
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelectMethod.Linear
+  nameWithType: WeightedSelectMethod.Linear
+- uid: MackySoft.Choice.WeightedSelector
+  name: WeightedSelector
+  href: api/MackySoft.Choice.WeightedSelector.html
+  commentId: T:MackySoft.Choice.WeightedSelector
+  fullName: MackySoft.Choice.WeightedSelector
+  nameWithType: WeightedSelector
+- uid: MackySoft.Choice.WeightedSelector.Empty*
+  name: Empty
+  href: api/MackySoft.Choice.WeightedSelector.html#MackySoft_Choice_WeightedSelector_Empty_
+  commentId: Overload:MackySoft.Choice.WeightedSelector.Empty
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector.Empty
+  nameWithType: WeightedSelector.Empty
+- uid: MackySoft.Choice.WeightedSelector.Empty``1
+  name: Empty<T>()
+  href: api/MackySoft.Choice.WeightedSelector.html#MackySoft_Choice_WeightedSelector_Empty__1
+  commentId: M:MackySoft.Choice.WeightedSelector.Empty``1
+  name.vb: Empty(Of T)()
+  fullName: MackySoft.Choice.WeightedSelector.Empty<T>()
+  fullName.vb: MackySoft.Choice.WeightedSelector.Empty(Of T)()
+  nameWithType: WeightedSelector.Empty<T>()
+  nameWithType.vb: WeightedSelector.Empty(Of T)()
+- uid: MackySoft.Choice.WeightedSelector`1
+  name: WeightedSelector<TItem>
+  href: api/MackySoft.Choice.WeightedSelector-1.html
+  commentId: T:MackySoft.Choice.WeightedSelector`1
+  name.vb: WeightedSelector(Of TItem)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem)
+  nameWithType: WeightedSelector<TItem>
+  nameWithType.vb: WeightedSelector(Of TItem)
+- uid: MackySoft.Choice.WeightedSelector`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Func{`0,System.Single},MackySoft.Choice.IWeightedSelectMethod)
+  name: WeightedSelector(IEnumerable<TItem>, Func<TItem, Single>, IWeightedSelectMethod)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1__ctor_System_Collections_Generic_IEnumerable__0__System_Func__0_System_Single__MackySoft_Choice_IWeightedSelectMethod_
+  commentId: M:MackySoft.Choice.WeightedSelector`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Func{`0,System.Single},MackySoft.Choice.IWeightedSelectMethod)
+  name.vb: WeightedSelector(IEnumerable(Of TItem), Func(Of TItem, Single), IWeightedSelectMethod)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.WeightedSelector(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, System.Single>, MackySoft.Choice.IWeightedSelectMethod)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).WeightedSelector(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, System.Single), MackySoft.Choice.IWeightedSelectMethod)
+  nameWithType: WeightedSelector<TItem>.WeightedSelector(IEnumerable<TItem>, Func<TItem, Single>, IWeightedSelectMethod)
+  nameWithType.vb: WeightedSelector(Of TItem).WeightedSelector(IEnumerable(Of TItem), Func(Of TItem, Single), IWeightedSelectMethod)
+- uid: MackySoft.Choice.WeightedSelector`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,System.Single}},MackySoft.Choice.IWeightedSelectMethod)
+  name: WeightedSelector(IEnumerable<KeyValuePair<TItem, Single>>, IWeightedSelectMethod)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair__0_System_Single___MackySoft_Choice_IWeightedSelectMethod_
+  commentId: M:MackySoft.Choice.WeightedSelector`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,System.Single}},MackySoft.Choice.IWeightedSelectMethod)
+  name.vb: WeightedSelector(IEnumerable(Of KeyValuePair(Of TItem, Single)), IWeightedSelectMethod)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.WeightedSelector(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TItem, System.Single>>, MackySoft.Choice.IWeightedSelectMethod)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).WeightedSelector(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TItem, System.Single)), MackySoft.Choice.IWeightedSelectMethod)
+  nameWithType: WeightedSelector<TItem>.WeightedSelector(IEnumerable<KeyValuePair<TItem, Single>>, IWeightedSelectMethod)
+  nameWithType.vb: WeightedSelector(Of TItem).WeightedSelector(IEnumerable(Of KeyValuePair(Of TItem, Single)), IWeightedSelectMethod)
+- uid: MackySoft.Choice.WeightedSelector`1.#ctor*
+  name: WeightedSelector
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1__ctor_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.#ctor
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.WeightedSelector
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).WeightedSelector
+  nameWithType: WeightedSelector<TItem>.WeightedSelector
+  nameWithType.vb: WeightedSelector(Of TItem).WeightedSelector
+- uid: MackySoft.Choice.WeightedSelector`1.Add(`0,System.Single)
+  name: Add(TItem, Single)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Add__0_System_Single_
+  commentId: M:MackySoft.Choice.WeightedSelector`1.Add(`0,System.Single)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Add(TItem, System.Single)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Add(TItem, System.Single)
+  nameWithType: WeightedSelector<TItem>.Add(TItem, Single)
+  nameWithType.vb: WeightedSelector(Of TItem).Add(TItem, Single)
+- uid: MackySoft.Choice.WeightedSelector`1.Add*
+  name: Add
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Add_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Add
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Add
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Add
+  nameWithType: WeightedSelector<TItem>.Add
+  nameWithType.vb: WeightedSelector(Of TItem).Add
+- uid: MackySoft.Choice.WeightedSelector`1.Clear
+  name: Clear()
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Clear
+  commentId: M:MackySoft.Choice.WeightedSelector`1.Clear
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Clear()
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Clear()
+  nameWithType: WeightedSelector<TItem>.Clear()
+  nameWithType.vb: WeightedSelector(Of TItem).Clear()
+- uid: MackySoft.Choice.WeightedSelector`1.Clear*
+  name: Clear
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Clear_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Clear
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Clear
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Clear
+  nameWithType: WeightedSelector<TItem>.Clear
+  nameWithType.vb: WeightedSelector(Of TItem).Clear
+- uid: MackySoft.Choice.WeightedSelector`1.ContainsKey(`0)
+  name: ContainsKey(TItem)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_ContainsKey__0_
+  commentId: M:MackySoft.Choice.WeightedSelector`1.ContainsKey(`0)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.ContainsKey(TItem)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).ContainsKey(TItem)
+  nameWithType: WeightedSelector<TItem>.ContainsKey(TItem)
+  nameWithType.vb: WeightedSelector(Of TItem).ContainsKey(TItem)
+- uid: MackySoft.Choice.WeightedSelector`1.ContainsKey*
+  name: ContainsKey
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_ContainsKey_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.ContainsKey
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.ContainsKey
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).ContainsKey
+  nameWithType: WeightedSelector<TItem>.ContainsKey
+  nameWithType.vb: WeightedSelector(Of TItem).ContainsKey
+- uid: MackySoft.Choice.WeightedSelector`1.Count
+  name: Count
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Count
+  commentId: P:MackySoft.Choice.WeightedSelector`1.Count
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Count
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Count
+  nameWithType: WeightedSelector<TItem>.Count
+  nameWithType.vb: WeightedSelector(Of TItem).Count
+- uid: MackySoft.Choice.WeightedSelector`1.Count*
+  name: Count
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Count_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Count
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Count
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Count
+  nameWithType: WeightedSelector<TItem>.Count
+  nameWithType.vb: WeightedSelector(Of TItem).Count
+- uid: MackySoft.Choice.WeightedSelector`1.Dispose
+  name: Dispose()
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Dispose
+  commentId: M:MackySoft.Choice.WeightedSelector`1.Dispose
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Dispose()
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Dispose()
+  nameWithType: WeightedSelector<TItem>.Dispose()
+  nameWithType.vb: WeightedSelector(Of TItem).Dispose()
+- uid: MackySoft.Choice.WeightedSelector`1.Dispose*
+  name: Dispose
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Dispose_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Dispose
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Dispose
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Dispose
+  nameWithType: WeightedSelector<TItem>.Dispose
+  nameWithType.vb: WeightedSelector(Of TItem).Dispose
+- uid: MackySoft.Choice.WeightedSelector`1.Finalize
+  name: Finalize()
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Finalize
+  commentId: M:MackySoft.Choice.WeightedSelector`1.Finalize
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Finalize()
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Finalize()
+  nameWithType: WeightedSelector<TItem>.Finalize()
+  nameWithType.vb: WeightedSelector(Of TItem).Finalize()
+- uid: MackySoft.Choice.WeightedSelector`1.Finalize*
+  name: Finalize
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Finalize_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Finalize
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Finalize
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Finalize
+  nameWithType: WeightedSelector<TItem>.Finalize
+  nameWithType.vb: WeightedSelector(Of TItem).Finalize
+- uid: MackySoft.Choice.WeightedSelector`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_GetEnumerator
+  commentId: M:MackySoft.Choice.WeightedSelector`1.GetEnumerator
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.GetEnumerator()
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).GetEnumerator()
+  nameWithType: WeightedSelector<TItem>.GetEnumerator()
+  nameWithType.vb: WeightedSelector(Of TItem).GetEnumerator()
+- uid: MackySoft.Choice.WeightedSelector`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_GetEnumerator_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.GetEnumerator
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.GetEnumerator
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).GetEnumerator
+  nameWithType: WeightedSelector<TItem>.GetEnumerator
+  nameWithType.vb: WeightedSelector(Of TItem).GetEnumerator
+- uid: MackySoft.Choice.WeightedSelector`1.Item(`0)
+  name: Item[TItem]
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Item__0_
+  commentId: P:MackySoft.Choice.WeightedSelector`1.Item(`0)
+  name.vb: Item(TItem)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Item[TItem]
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Item(TItem)
+  nameWithType: WeightedSelector<TItem>.Item[TItem]
+  nameWithType.vb: WeightedSelector(Of TItem).Item(TItem)
+- uid: MackySoft.Choice.WeightedSelector`1.Item*
+  name: Item
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Item_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Item
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Item
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Item
+  nameWithType: WeightedSelector<TItem>.Item
+  nameWithType.vb: WeightedSelector(Of TItem).Item
+- uid: MackySoft.Choice.WeightedSelector`1.Remove(`0)
+  name: Remove(TItem)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Remove__0_
+  commentId: M:MackySoft.Choice.WeightedSelector`1.Remove(`0)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Remove(TItem)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Remove(TItem)
+  nameWithType: WeightedSelector<TItem>.Remove(TItem)
+  nameWithType.vb: WeightedSelector(Of TItem).Remove(TItem)
+- uid: MackySoft.Choice.WeightedSelector`1.Remove*
+  name: Remove
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_Remove_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.Remove
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.Remove
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).Remove
+  nameWithType: WeightedSelector<TItem>.Remove
+  nameWithType.vb: WeightedSelector(Of TItem).Remove
+- uid: MackySoft.Choice.WeightedSelector`1.SelectItem(System.Single)
+  name: SelectItem(Single)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_SelectItem_System_Single_
+  commentId: M:MackySoft.Choice.WeightedSelector`1.SelectItem(System.Single)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.SelectItem(System.Single)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).SelectItem(System.Single)
+  nameWithType: WeightedSelector<TItem>.SelectItem(Single)
+  nameWithType.vb: WeightedSelector(Of TItem).SelectItem(Single)
+- uid: MackySoft.Choice.WeightedSelector`1.SelectItem*
+  name: SelectItem
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_SelectItem_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.SelectItem
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.SelectItem
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).SelectItem
+  nameWithType: WeightedSelector<TItem>.SelectItem
+  nameWithType.vb: WeightedSelector(Of TItem).SelectItem
+- uid: MackySoft.Choice.WeightedSelector`1.TryGetValue(`0,System.Single@)
+  name: TryGetValue(TItem, out Single)
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_TryGetValue__0_System_Single__
+  commentId: M:MackySoft.Choice.WeightedSelector`1.TryGetValue(`0,System.Single@)
+  name.vb: TryGetValue(TItem, ByRef Single)
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.TryGetValue(TItem, out System.Single)
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).TryGetValue(TItem, ByRef System.Single)
+  nameWithType: WeightedSelector<TItem>.TryGetValue(TItem, out Single)
+  nameWithType.vb: WeightedSelector(Of TItem).TryGetValue(TItem, ByRef Single)
+- uid: MackySoft.Choice.WeightedSelector`1.TryGetValue*
+  name: TryGetValue
+  href: api/MackySoft.Choice.WeightedSelector-1.html#MackySoft_Choice_WeightedSelector_1_TryGetValue_
+  commentId: Overload:MackySoft.Choice.WeightedSelector`1.TryGetValue
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelector<TItem>.TryGetValue
+  fullName.vb: MackySoft.Choice.WeightedSelector(Of TItem).TryGetValue
+  nameWithType: WeightedSelector<TItem>.TryGetValue
+  nameWithType.vb: WeightedSelector(Of TItem).TryGetValue
+- uid: MackySoft.Choice.WeightedSelectorExtensions
+  name: WeightedSelectorExtensions
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html
+  commentId: T:MackySoft.Choice.WeightedSelectorExtensions
+  fullName: MackySoft.Choice.WeightedSelectorExtensions
+  nameWithType: WeightedSelectorExtensions
+- uid: MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom*
+  name: SelectItemWithUnityRandom
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_SelectItemWithUnityRandom_
+  commentId: Overload:MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom
+  nameWithType: WeightedSelectorExtensions.SelectItemWithUnityRandom
+- uid: MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom``1(MackySoft.Choice.IReadOnlyWeightedSelector{``0})
+  name: SelectItemWithUnityRandom<T>(IReadOnlyWeightedSelector<T>)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_SelectItemWithUnityRandom__1_MackySoft_Choice_IReadOnlyWeightedSelector___0__
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom``1(MackySoft.Choice.IReadOnlyWeightedSelector{``0})
+  name.vb: SelectItemWithUnityRandom(Of T)(IReadOnlyWeightedSelector(Of T))
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom<T>(MackySoft.Choice.IReadOnlyWeightedSelector<T>)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.SelectItemWithUnityRandom(Of T)(MackySoft.Choice.IReadOnlyWeightedSelector(Of T))
+  nameWithType: WeightedSelectorExtensions.SelectItemWithUnityRandom<T>(IReadOnlyWeightedSelector<T>)
+  nameWithType.vb: WeightedSelectorExtensions.SelectItemWithUnityRandom(Of T)(IReadOnlyWeightedSelector(Of T))
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector*
+  name: ToWeightedSelector
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector_
+  commentId: Overload:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  name: ToWeightedSelector<TItem>(IEnumerable<TItem>, Func<TItem, Single>)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  name.vb: ToWeightedSelector(Of TItem)(IEnumerable(Of TItem), Func(Of TItem, Single))
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TItem>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, System.Single>)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, System.Single))
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TItem>(IEnumerable<TItem>, Func<TItem, Single>)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(IEnumerable(Of TItem), Func(Of TItem, Single))
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},MackySoft.Choice.IWeightedSelectMethod)
+  name: ToWeightedSelector<TItem>(IEnumerable<TItem>, Func<TItem, Single>, IWeightedSelectMethod)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__MackySoft_Choice_IWeightedSelectMethod_
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},MackySoft.Choice.IWeightedSelectMethod)
+  name.vb: ToWeightedSelector(Of TItem)(IEnumerable(Of TItem), Func(Of TItem, Single), IWeightedSelectMethod)
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TItem>(System.Collections.Generic.IEnumerable<TItem>, System.Func<TItem, System.Single>, MackySoft.Choice.IWeightedSelectMethod)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(System.Collections.Generic.IEnumerable(Of TItem), System.Func(Of TItem, System.Single), MackySoft.Choice.IWeightedSelectMethod)
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TItem>(IEnumerable<TItem>, Func<TItem, Single>, IWeightedSelectMethod)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(IEnumerable(Of TItem), Func(Of TItem, Single), IWeightedSelectMethod)
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}})
+  name: ToWeightedSelector<TItem>(IEnumerable<KeyValuePair<TItem, Single>>)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__1_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair___0_System_Single___
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}})
+  name.vb: ToWeightedSelector(Of TItem)(IEnumerable(Of KeyValuePair(Of TItem, Single)))
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TItem>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TItem, System.Single>>)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TItem, System.Single)))
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TItem>(IEnumerable<KeyValuePair<TItem, Single>>)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(IEnumerable(Of KeyValuePair(Of TItem, Single)))
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}},MackySoft.Choice.IWeightedSelectMethod)
+  name: ToWeightedSelector<TItem>(IEnumerable<KeyValuePair<TItem, Single>>, IWeightedSelectMethod)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__1_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair___0_System_Single___MackySoft_Choice_IWeightedSelectMethod_
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}},MackySoft.Choice.IWeightedSelectMethod)
+  name.vb: ToWeightedSelector(Of TItem)(IEnumerable(Of KeyValuePair(Of TItem, Single)), IWeightedSelectMethod)
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TItem>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TItem, System.Single>>, MackySoft.Choice.IWeightedSelectMethod)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TItem, System.Single)), MackySoft.Choice.IWeightedSelectMethod)
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TItem>(IEnumerable<KeyValuePair<TItem, Single>>, IWeightedSelectMethod)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TItem)(IEnumerable(Of KeyValuePair(Of TItem, Single)), IWeightedSelectMethod)
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,System.Single})
+  name: ToWeightedSelector<TSource, TItem>(IEnumerable<TSource>, Func<TSource, TItem>, Func<TSource, Single>)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0_System_Single__
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,System.Single})
+  name.vb: ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of TSource), Func(Of TSource, TItem), Func(Of TSource, Single))
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TItem>, System.Func<TSource, System.Single>)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TItem), System.Func(Of TSource, System.Single))
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(IEnumerable<TSource>, Func<TSource, TItem>, Func<TSource, Single>)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of TSource), Func(Of TSource, TItem), Func(Of TSource, Single))
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,System.Single},MackySoft.Choice.IWeightedSelectMethod)
+  name: ToWeightedSelector<TSource, TItem>(IEnumerable<TSource>, Func<TSource, TItem>, Func<TSource, Single>, IWeightedSelectMethod)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Func___0_System_Single__MackySoft_Choice_IWeightedSelectMethod_
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,System.Single},MackySoft.Choice.IWeightedSelectMethod)
+  name.vb: ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of TSource), Func(Of TSource, TItem), Func(Of TSource, Single), IWeightedSelectMethod)
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TItem>, System.Func<TSource, System.Single>, MackySoft.Choice.IWeightedSelectMethod)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, TItem), System.Func(Of TSource, System.Single), MackySoft.Choice.IWeightedSelectMethod)
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(IEnumerable<TSource>, Func<TSource, TItem>, Func<TSource, Single>, IWeightedSelectMethod)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of TSource), Func(Of TSource, TItem), Func(Of TSource, Single), IWeightedSelectMethod)
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}},System.Func{``0,``1})
+  name: ToWeightedSelector<TSource, TItem>(IEnumerable<KeyValuePair<TSource, Single>>, Func<TSource, TItem>)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__2_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair___0_System_Single___System_Func___0___1__
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}},System.Func{``0,``1})
+  name.vb: ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of KeyValuePair(Of TSource, Single)), Func(Of TSource, TItem))
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TSource, System.Single>>, System.Func<TSource, TItem>)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TSource, System.Single)), System.Func(Of TSource, TItem))
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(IEnumerable<KeyValuePair<TSource, Single>>, Func<TSource, TItem>)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of KeyValuePair(Of TSource, Single)), Func(Of TSource, TItem))
+- uid: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}},System.Func{``0,``1},MackySoft.Choice.IWeightedSelectMethod)
+  name: ToWeightedSelector<TSource, TItem>(IEnumerable<KeyValuePair<TSource, Single>>, Func<TSource, TItem>, IWeightedSelectMethod)
+  href: api/MackySoft.Choice.WeightedSelectorExtensions.html#MackySoft_Choice_WeightedSelectorExtensions_ToWeightedSelector__2_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair___0_System_Single___System_Func___0___1__MackySoft_Choice_IWeightedSelectMethod_
+  commentId: M:MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,System.Single}},System.Func{``0,``1},MackySoft.Choice.IWeightedSelectMethod)
+  name.vb: ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of KeyValuePair(Of TSource, Single)), Func(Of TSource, TItem), IWeightedSelectMethod)
+  fullName: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TSource, System.Single>>, System.Func<TSource, TItem>, MackySoft.Choice.IWeightedSelectMethod)
+  fullName.vb: MackySoft.Choice.WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TSource, System.Single)), System.Func(Of TSource, TItem), MackySoft.Choice.IWeightedSelectMethod)
+  nameWithType: WeightedSelectorExtensions.ToWeightedSelector<TSource, TItem>(IEnumerable<KeyValuePair<TSource, Single>>, Func<TSource, TItem>, IWeightedSelectMethod)
+  nameWithType.vb: WeightedSelectorExtensions.ToWeightedSelector(Of TSource, TItem)(IEnumerable(Of KeyValuePair(Of TSource, Single)), Func(Of TSource, TItem), IWeightedSelectMethod)
