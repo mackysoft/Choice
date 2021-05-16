@@ -48,5 +48,30 @@ namespace MackySoft.Choice.Tests {
 			Assert.AreSame(source.LastOrDefault(x => x.weight > 0f).item,weightedSelector.SelectItem(1f));
 		}
 
+		[Test]
+		[Description(
+			"Compare the results of all algorithms and find the algorithm that returned unexpected value.\n" +
+			"This test is based on the assumption that linear scan will always return the expected value."
+		)]
+		public void CompareAllMethods ([Random(0f,1f,10)] float value) {
+			var source = ItemEnumerableGenerator.GenerateEnumerable(3).ToArray();
+
+			Item expected = source
+				.ToWeightedSelector(x => x.item,x => x.weight,WeightedSelectMethod.Linear)
+				.SelectItem(value);
+			
+			Debug.Log(string.Join("\n",source));
+			
+			foreach (IWeightedSelectMethod method in AllWeightedSelectMethods()) {
+				var weightedSelector = source.ToWeightedSelector(x => x.item,x => x.weight,method);
+				Assert.AreSame(expected,weightedSelector.SelectItem(value),$"{method.GetType().Name} returned an invalid value.\nAll methods must return the same value.");
+			}
+		}
+
+		static IEnumerable<IWeightedSelectMethod> AllWeightedSelectMethods () {
+			yield return WeightedSelectMethod.Linear;
+			yield return WeightedSelectMethod.Binary;
+		}
+
 	}
 }

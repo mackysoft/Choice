@@ -30,7 +30,7 @@ namespace MackySoft.Choice.Tests {
 			for (int i = 0;count > i;i++) {
 				yield return new ItemEntry {
 					item = new Item { id = i },
-					weight = Random.Range(0,10)
+					weight = Random.Range(1,10)
 				};
 			}
 		}
@@ -39,7 +39,7 @@ namespace MackySoft.Choice.Tests {
 			for (int i = 0;count > i;i++) {
 				yield return new KeyValuePair<Item,float>(
 					new Item { id = i },
-					Random.Range(0,10)
+					Random.Range(1,10)
 				);
 			}
 		}
