@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace MackySoft.Choice.Internal {
@@ -8,7 +9,7 @@ namespace MackySoft.Choice.Internal {
 	/// <para> This struct use <see cref="ArrayPool{T}"/> internally to avoid allocation and can be used just like a normal array. </para>
 	/// <para> After using it, please call the Dispose(). </para>
 	/// </summary>
-	public struct TemporaryArray<T> : IDisposable {
+	public struct TemporaryArray<T> : IEnumerable<T>, IDisposable {
 
 		/// <summary>
 		/// Create a temporary array of the specified length.
@@ -39,6 +40,14 @@ namespace MackySoft.Choice.Internal {
 			return new TemporaryArray<T>(array,count);
 		}
 
+		public static TemporaryArray<T> From (TemporaryArray<T> source) {
+			var result = Create(source.Length);
+			for (int i = 0;source.Length > i;i++) {
+				result[i] = source[i];
+			}
+			return result;
+		}
+
 		T[] m_Array;
 		int m_Length;
 
@@ -56,7 +65,7 @@ namespace MackySoft.Choice.Internal {
 		public T[] Array => m_Array;
 
 		public T this[int index] {
-			get => m_Array[index];
+			get => index >= 0 && index < m_Length ? m_Array[index] : throw new IndexOutOfRangeException();
 			set => m_Array[index] = value;
 		}
 
@@ -101,6 +110,15 @@ namespace MackySoft.Choice.Internal {
 			m_Length = 0;
 		}
 
+		public IEnumerator<T> GetEnumerator () {
+			for (int i = 0;m_Length > i;i++) {
+				yield return m_Array[i];
+			}
+		}
+
+		IEnumerator IEnumerable.GetEnumerator () {
+			return GetEnumerator();
+		}
 	}
 
 	public static class TemporaryArrayExtensions {

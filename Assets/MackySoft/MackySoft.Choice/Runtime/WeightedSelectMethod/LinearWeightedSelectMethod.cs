@@ -1,7 +1,5 @@
-﻿using System;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using MackySoft.Choice.Internal;
-using UnityEngine;
 
 namespace MackySoft.Choice {
 
@@ -11,10 +9,10 @@ namespace MackySoft.Choice {
 	/// </summary>
 	internal sealed class LinearWeightedSelectMethod : IWeightedSelectMethod {
 
-		public static readonly LinearWeightedSelectMethod Instance = new LinearWeightedSelectMethod();
+		float m_TotalDistance;
 		
 		public int SelectIndex (TemporaryArray<float> weights,float value) {
-			float remainingDistance = value * Sum(weights);
+			float remainingDistance = value * m_TotalDistance;
 			for (int i = 0;i < weights.Length;i++) {
 				float weight = weights[i];
 				if (weight <= 0f) {
@@ -30,6 +28,10 @@ namespace MackySoft.Choice {
 			return -1;
 		}
 
+		public void Calculate (TemporaryArray<float> weights) {
+			m_TotalDistance = Sum(weights);
+		}
+
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		static float Sum (TemporaryArray<float> weights) {
 			float result = 0f;
@@ -38,6 +40,6 @@ namespace MackySoft.Choice {
 			}
 			return result;
 		}
-
+		
 	}
 }

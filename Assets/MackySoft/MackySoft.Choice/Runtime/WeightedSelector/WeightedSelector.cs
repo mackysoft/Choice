@@ -27,17 +27,20 @@ namespace MackySoft.Choice {
 					throw KeyNotFound();
 				}
 				m_Weights[index] = value;
+				m_Method.Calculate(m_Weights);
 			}
 		}
 
 		public WeightedSelector (IEnumerable<TItem> source,Func<TItem,float> weightSelector,IWeightedSelectMethod method) {
 			EnumerableConversion.EnumerableToTemporaryArray(source,weightSelector,out m_Items,out m_Weights);
 			m_Method = method;
+			m_Method.Calculate(m_Weights);
 		}
 
 		public WeightedSelector (IEnumerable<KeyValuePair<TItem,float>> source,IWeightedSelectMethod method) {
 			EnumerableConversion.DictionaryToTemporaryArray(source,out m_Items,out m_Weights);
 			m_Method = method;
+			m_Method.Calculate(m_Weights);
 		}
 
 		internal WeightedSelector (TemporaryArray<TItem> items,TemporaryArray<float> weights,IWeightedSelectMethod method) {
@@ -47,6 +50,7 @@ namespace MackySoft.Choice {
 			m_Items = items;
 			m_Weights = weights;
 			m_Method = method;
+			m_Method.Calculate(m_Weights);
 		}
 
 		~WeightedSelector () {
@@ -75,6 +79,7 @@ namespace MackySoft.Choice {
 
 			m_Items.Add(item);
 			m_Weights.Add(weight);
+			m_Method.Calculate(m_Weights);
 		}
 
 		public bool Remove (TItem item) {
@@ -84,12 +89,14 @@ namespace MackySoft.Choice {
 			}
 			m_Items.RemoveAt(index);
 			m_Weights.RemoveAt(index);
+			m_Method.Calculate(m_Weights);
 			return true;
 		}
 
 		public void Clear () {
 			m_Items.Clear();
 			m_Weights.Clear();
+			m_Method.Calculate(m_Weights);
 		}
 
 		public TItem SelectItem (float value) {

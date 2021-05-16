@@ -9,51 +9,69 @@ namespace MackySoft.Choice {
 	/// <para> but is accelerated by up to O(log(n)) for each selection, </para>
 	/// <para> where n is number of weights. </para>
 	/// </summary>
-	internal sealed class BinaryWeightedSelectMethod : IWeightedSelectMethod {
+	internal sealed class BinaryWeightedSelectMethod : IWeightedSelectMethod, IDisposable {
 
-		public static readonly BinaryWeightedSelectMethod Instance = new BinaryWeightedSelectMethod();
+		TemporaryArray<float> m_RunningTotals;
+		TemporaryArray<int> m_Indicies;
 
-		public int SelectIndex (TemporaryArray<float> weights,float value) {
-			CumulativeSum(weights,out var runningTotals,out var indicies);
-			
-			using (runningTotals)
-			using (indicies) {
-				float targetDistance = value * runningTotals[runningTotals.Length - 1];
-				int low = 0;
-				int high = runningTotals.Length;
-
-				while (low < high) {
-					int mid = (int)Math.Floor((low + high) / 2f);
-					float distance = runningTotals[mid];
-					if (distance < targetDistance) {
-						low = mid + 1;
-					} else if (distance > targetDistance) {
-						high = mid;
-					} else {
-						return indicies[mid];
-					}
-				}
-
-				return indicies[low];
-			}
+		~BinaryWeightedSelectMethod () {
+			Dispose();
 		}
 
-		static void CumulativeSum (TemporaryArray<float> weights,out TemporaryArray<float> runningTotals,out TemporaryArray<int> indicies) {
-			runningTotals = TemporaryArray<float>.CreateAsList(weights.Length);
-			indicies = TemporaryArray<int>.Create(weights.Length);
+		public int SelectIndex (TemporaryArray<float> weights,float value) {
+			float targetDistance = m_RunningTotals[m_RunningTotals.Length - 1] * value;
+			int low = 0;
+			int high = m_RunningTotals.Length;
+
+			while (low < high) {
+				int mid = (int)Math.Floor((low + high) / 2f);
+				float distance = m_RunningTotals[mid];
+				if (distance < targetDistance) {
+					low = mid + 1;
+				} else if (distance > targetDistance) {
+					high = mid;
+				} else {
+					return m_Indicies[mid];
+				}
+			}
+
+			return m_Indicies[low];
+		}
+
+		public void Calculate (TemporaryArray<float> weights) {
+			m_RunningTotals.Dispose();
+			m_Indicies.Dispose();
+			m_RunningTotals = TemporaryArray<float>.CreateAsList(weights.Length);
+			m_Indicies = TemporaryArray<int>.Create(weights.Length);
+
 			float sum = 0f;
-			int nonZeroIteration = 0;
-			for (int i = 0;i < indicies.Length;i++) {
+			int naturalNumberIteration = 0;
+			for (int i = 0;i < m_Indicies.Length;i++) {
 				float weight = weights[i];
 				if (weight <= 0f) {
 					continue;
 				}
 				sum += weight;
-				runningTotals.Add(sum);
-				indicies[nonZeroIteration] = i;
-				nonZeroIteration++;
+				m_RunningTotals.Add(sum);
+				m_Indicies[naturalNumberIteration] = i;
+				naturalNumberIteration++;
 			}
 		}
+
+		#region IDisposable Support
+
+		bool m_IsDisposed;
+
+		public void Dispose () {
+			if (!m_IsDisposed) {
+				m_RunningTotals.Dispose();
+				m_Indicies.Dispose();
+
+				m_IsDisposed = true;
+			}
+		}
+
+		#endregion
 
 	}
 }

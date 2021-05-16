@@ -1,5 +1,4 @@
-﻿using System;
-using MackySoft.Choice.Internal;
+﻿using MackySoft.Choice.Internal;
 
 namespace MackySoft.Choice {
 
@@ -14,8 +13,13 @@ namespace MackySoft.Choice {
 		///	<para> The value must be between 0.0f and 1.0f. </para>
 		/// </param>
 		/// <returns> Selected index from weights. </returns>
-		/// <exception cref="ArgumentNullException"></exception>
 		int SelectIndex (TemporaryArray<float> weights,float value);
+
+		/// <summary>
+		/// Calculate the required data.
+		/// </summary>
+		/// <param name="weights"></param>
+		void Calculate (TemporaryArray<float> weights);
 
 	}
 
@@ -25,7 +29,7 @@ namespace MackySoft.Choice {
 		/// <para> The simplest algorithm that walks linearly along the weights. </para>
 		/// <para> This method is an O(n) operation, where n is number of weights. </para>
 		/// </summary>
-		public static readonly IWeightedSelectMethod Linear = LinearWeightedSelectMethod.Instance;
+		public static IWeightedSelectMethod Linear => new LinearWeightedSelectMethod();
 
 		/// <summary>
 		/// <para> The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights. </para>
@@ -33,7 +37,7 @@ namespace MackySoft.Choice {
 		/// <para> but is accelerated by up to O(log(n)) for each selection, </para>
 		/// <para> where n is number of weights. </para>
 		/// </summary>
-		public static readonly IWeightedSelectMethod Binary = BinaryWeightedSelectMethod.Instance;
+		public static IWeightedSelectMethod Binary => new BinaryWeightedSelectMethod();
 
 	}
 
