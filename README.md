@@ -2,6 +2,10 @@
 
 **Created by Hiroya Aramaki ([Makihiro](https://twitter.com/makihiro_dev))**
 
+[![Tests](https://github.com/mackysoft/Choice/actions/workflows/tests.yaml/badge.svg)](https://github.com/mackysoft/Choice/actions/workflows/tests.yaml)
+[![Build](https://github.com/mackysoft/Choice/actions/workflows/build.yaml/badge.svg)](https://github.com/mackysoft/Choice/actions/workflows/build.yaml)
+[![Release](https://img.shields.io/github/v/release/mackysoft/Choice)](https://github.com/mackysoft/Choice/releases)
+[![openupm](https://img.shields.io/npm/v/com.mackysoft.choice?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.mackysoft.choice/)
 
 ## What is Weighted Random Selector ?
 
@@ -37,6 +41,24 @@ Download any version from releases.
 
 Releases: https://github.com/mackysoft/Choice/releases
 
+### Install via git URL
+
+Or, you can add this package by opening PackageManager and entering
+
+`https://github.com/mackysoft/Choice.git?path=Assets/MackySoft/MackySoft.Choice`
+
+from the `Add package from git URL` option.
+
+
+### Install via Open UPM
+
+Or, you can install this package from the [Open UPM](https://openupm.com/packages/com.mackysoft.choice/) registry.
+
+More details [here](https://openupm.com/).
+
+```
+openupm add com.mackysoft.choice
+```
 
 # <a id="usage" href="#requirements"> 🔰 Usage </a>
 
