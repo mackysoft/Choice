@@ -1,0 +1,10 @@
+{
+	"name": "com.mackysoft.choice",
+	"displayName": "Choice",
+	"version": "1.0.0",
+	"unity": "2019.4",
+	"description": "Weighted random selector for Unity.",
+	"keywords": [ "Choice" ],
+	"license": "MIT",
+	"dependencies": {}
+}
