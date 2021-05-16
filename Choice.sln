@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MackySoft.Choice", "MackySoft.Choice.csproj", "{707F841F-177C-3E41-E331-A3076E6AE2DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MackySoft.Choice.Editor.Tests", "MackySoft.Choice.Editor.Tests.csproj", "{990E72FB-CC00-B3AC-B435-2490F06D2916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{2784D86B-75C9-2336-1640-E25FF0D448B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{707F841F-177C-3E41-E331-A3076E6AE2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707F841F-177C-3E41-E331-A3076E6AE2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707F841F-177C-3E41-E331-A3076E6AE2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707F841F-177C-3E41-E331-A3076E6AE2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990E72FB-CC00-B3AC-B435-2490F06D2916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990E72FB-CC00-B3AC-B435-2490F06D2916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990E72FB-CC00-B3AC-B435-2490F06D2916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990E72FB-CC00-B3AC-B435-2490F06D2916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2784D86B-75C9-2336-1640-E25FF0D448B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2784D86B-75C9-2336-1640-E25FF0D448B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2784D86B-75C9-2336-1640-E25FF0D448B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2784D86B-75C9-2336-1640-E25FF0D448B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
