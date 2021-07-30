@@ -19,6 +19,13 @@ It can be used to determine things with probability.
 
 Choice is a library that was created to make it easier to implement.
 
+```cs
+// This is the simplest usage.
+var randomSelectedItem = items
+	.ToWeightedSelector(item => item.weight)
+	.SelectItemWithUnityRandom();
+```
+
 Great introduction article on Weighted Random Select: https://blog.bruce-hill.com/a-faster-weighted-random-choice
 
 
@@ -31,6 +38,7 @@ Great introduction article on Weighted Random Select: https://blog.bruce-hill.co
   - [Algorithms](#algorithms)
     - [Linear Scan](#linear-scan)
     - [Binary Search](#binary-search)
+    - [Alias Method](#alias-method)
 - [📔 Author Info](#author-info)
 - [📜 License](#license)
 
@@ -93,34 +101,16 @@ public WeightedItem SelectItem () {
 ```
 
 
-## <a id="toweightedselector-overloads" href="#toweightedselector-overloads"> ToWeightedSelector Overloads  </a>
+## <a id="toweightedselector-overloads" href="#toweightedselector-overloads"> `ToWeightedSelector` Overloads  </a>
 
 The `ToWeightedSelector` method has many overloads and can be used for a variety of patterns.
 
+### <a id="from-weighted-entry" href="#from-weighted-entry"> from weighted entry pattern </a>
+
 ```cs
-public class WeightedItem {
-	public string id;
-	public float weight;
-}
-
-public class Item {
-	public string id;
-}
-
 public struct ItemEntry {
 	public Item item;
 	public float weight;
-}
-
-public IWeightedSelector<WeightedItem> WeightedItemPattern () {
-	var items = new WeightedItem[] {
-		new WeightedItem { id = "🍒", weight = 1f },
-		new WeightedItem { id = "🍏", weight = 5f },
-		new WeightedItem { id = "🍍", weight = 3f }
-	};
-
-	// Create a WeightedSelector using the weight of the WeightedItem.
-	return fromWeightedItem = items.ToWeightedSelector(weightSelector: item => item.weight);
 }
 
 public IWeightedSelector<Item> WeightedEntryPattern () {
@@ -136,7 +126,34 @@ public IWeightedSelector<Item> WeightedEntryPattern () {
 		weightSelector: entry => entry.weight
 	);
 }
+```
 
+### <a id="from-weighted-item" href="#from-weighted-item"> from weighted item pattern </a>
+
+```cs
+public class WeightedItem {
+	public string id;
+	public float weight;
+}
+
+public IWeightedSelector<WeightedItem> WeightedItemPattern () {
+	var items = new WeightedItem[] {
+		new WeightedItem { id = "🍒", weight = 1f },
+		new WeightedItem { id = "🍏", weight = 5f },
+		new WeightedItem { id = "🍍", weight = 3f }
+	};
+
+	// Create a WeightedSelector using the weight of the WeightedItem.
+	return fromWeightedItem = items.ToWeightedSelector(weightSelector: item => item.weight);
+}
+```
+
+### <a id="from-dictionary" href="#from-dictionary"> from `Dictionary<Item,float>` </a>
+
+```cs
+public class Item {
+	public string id;
+}
 
 public IWeightedSelector<Item> DictionaryPattern () {
 	// This need a Dictionary<TItem,float>. (Strictly speaking, IEnumerable<KeyValuePair<TItem,float>>)
@@ -191,6 +208,16 @@ This method is an `O(n)` operation, where `n` is number of weights.
 The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights.
 
 It has an additional storage cost of `O(n)`, but is accelerated by up to `O(log(n))` for each selection, where `n` is number of weights.
+
+
+### <a id="alias-method" href="#alias-method"> Alias Method (`WeightedSelectMethod.Alias`) </a>
+
+The fastest algorithm.
+
+It takes `O(n)` run time to set up, but the selection is performed in `O(1)` run time,
+where `n` is number of weights.
+
+Therefore, this is a very effective algorithm for selecting multiple items.
 
 
 # <a id="author-info" href="#author-info"> 📔 Author Info </a>
