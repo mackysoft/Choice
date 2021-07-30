@@ -95,7 +95,12 @@ var randomSelectedItem = items
 <ul>
 <li><a href="#installation">📥 Installation</a></li>
 <li><a href="#usage">🔰 Usage</a><ul>
-<li><a href="#toweightedselector-overloads">ToWeightedSelector Overloads</a></li>
+<li><a href="#toweightedselector-overloads">ToWeightedSelector Overloads</a><ul>
+<li><a href="#from-weighted-entry">from weighted entry pattern</a></li>
+<li><a href="#from-weighted-item">from weighted item pattern</a></li>
+<li><a href="#from-dictionary">from Dictionary&lt;Item,float&gt; pattern</a></li>
+</ul>
+</li>
 <li><a href="#linq">LINQ</a></li>
 <li><a href="#algorithms">Algorithms</a><ul>
 <li><a href="#linear-scan">Linear Scan</a></li>
@@ -184,7 +189,7 @@ public IWeightedSelector&lt;WeightedItem&gt; WeightedItemPattern () {
     // Create a WeightedSelector using the weight of the WeightedItem.
     return fromWeightedItem = items.ToWeightedSelector(weightSelector: item =&gt; item.weight);
 }
-</code></pre><h3 id="a-idfrom-dictionary-hreffrom-dictionary-from-dictionaryitemfloat-a"><a id="from-dictionary" href="#from-dictionary"> from <code>Dictionary&lt;Item,float&gt;</code> </a></h3>
+</code></pre><h3 id="a-idfrom-dictionary-hreffrom-dictionary-from-dictionarytitemfloat-pattern-a"><a id="from-dictionary" href="#from-dictionary"> from <code>Dictionary&lt;TItem,float&gt;</code> pattern </a></h3>
 <pre><code class="lang-cs">public class Item {
     public string id;
 }
