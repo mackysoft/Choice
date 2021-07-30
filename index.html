@@ -86,7 +86,11 @@
 </ul>
 <p>It can be used to determine things with probability.</p>
 <p>Choice is a library that was created to make it easier to implement.</p>
-<p>Great introduction article on Weighted Random Select: <a href="https://blog.bruce-hill.com/a-faster-weighted-random-choice">https://blog.bruce-hill.com/a-faster-weighted-random-choice</a></p>
+<pre><code class="lang-cs">// This is the simplest usage.
+var randomSelectedItem = items
+    .ToWeightedSelector(item =&gt; item.weight)
+    .SelectItemWithUnityRandom();
+</code></pre><p>Great introduction article on Weighted Random Select: <a href="https://blog.bruce-hill.com/a-faster-weighted-random-choice">https://blog.bruce-hill.com/a-faster-weighted-random-choice</a></p>
 <h2 id="a-idindex-hrefindex-table-of-contents-a"><a id="index" href="#index"> Table of Contents </a></h2>
 <ul>
 <li><a href="#installation">📥 Installation</a></li>
@@ -96,6 +100,7 @@
 <li><a href="#algorithms">Algorithms</a><ul>
 <li><a href="#linear-scan">Linear Scan</a></li>
 <li><a href="#binary-search">Binary Search</a></li>
+<li><a href="#alias-method">Alias Method</a></li>
 </ul>
 </li>
 </ul>
@@ -142,31 +147,12 @@ public WeightedItem SelectItem () {
     return weightedSelector.SelectItemWithUnityRandom();
     // Same as weightedSelector.SelectItem(UnityEngine.Random.value);
 }
-</code></pre><h2 id="a-idtoweightedselector-overloads-hreftoweightedselector-overloads-toweightedselector-overloads--a"><a id="toweightedselector-overloads" href="#toweightedselector-overloads"> ToWeightedSelector Overloads  </a></h2>
+</code></pre><h2 id="a-idtoweightedselector-overloads-hreftoweightedselector-overloads-toweightedselector-overloads--a"><a id="toweightedselector-overloads" href="#toweightedselector-overloads"> <code>ToWeightedSelector</code> Overloads  </a></h2>
 <p>The <code>ToWeightedSelector</code> method has many overloads and can be used for a variety of patterns.</p>
-<pre><code class="lang-cs">public class WeightedItem {
-    public string id;
-    public float weight;
-}
-
-public class Item {
-    public string id;
-}
-
-public struct ItemEntry {
+<h3 id="a-idfrom-weighted-entry-hreffrom-weighted-entry-from-weighted-entry-pattern-a"><a id="from-weighted-entry" href="#from-weighted-entry"> from weighted entry pattern </a></h3>
+<pre><code class="lang-cs">public struct ItemEntry {
     public Item item;
     public float weight;
-}
-
-public IWeightedSelector&lt;WeightedItem&gt; WeightedItemPattern () {
-    var items = new WeightedItem[] {
-        new WeightedItem { id = &quot;🍒&quot;, weight = 1f },
-        new WeightedItem { id = &quot;🍏&quot;, weight = 5f },
-        new WeightedItem { id = &quot;🍍&quot;, weight = 3f }
-    };
-
-    // Create a WeightedSelector using the weight of the WeightedItem.
-    return fromWeightedItem = items.ToWeightedSelector(weightSelector: item =&gt; item.weight);
 }
 
 public IWeightedSelector&lt;Item&gt; WeightedEntryPattern () {
@@ -182,7 +168,26 @@ public IWeightedSelector&lt;Item&gt; WeightedEntryPattern () {
         weightSelector: entry =&gt; entry.weight
     );
 }
+</code></pre><h3 id="a-idfrom-weighted-item-hreffrom-weighted-item-from-weighted-item-pattern-a"><a id="from-weighted-item" href="#from-weighted-item"> from weighted item pattern </a></h3>
+<pre><code class="lang-cs">public class WeightedItem {
+    public string id;
+    public float weight;
+}
 
+public IWeightedSelector&lt;WeightedItem&gt; WeightedItemPattern () {
+    var items = new WeightedItem[] {
+        new WeightedItem { id = &quot;🍒&quot;, weight = 1f },
+        new WeightedItem { id = &quot;🍏&quot;, weight = 5f },
+        new WeightedItem { id = &quot;🍍&quot;, weight = 3f }
+    };
+
+    // Create a WeightedSelector using the weight of the WeightedItem.
+    return fromWeightedItem = items.ToWeightedSelector(weightSelector: item =&gt; item.weight);
+}
+</code></pre><h3 id="a-idfrom-dictionary-hreffrom-dictionary-from-dictionaryitemfloat-a"><a id="from-dictionary" href="#from-dictionary"> from <code>Dictionary&lt;Item,float&gt;</code> </a></h3>
+<pre><code class="lang-cs">public class Item {
+    public string id;
+}
 
 public IWeightedSelector&lt;Item&gt; DictionaryPattern () {
     // This need a Dictionary&lt;TItem,float&gt;. (Strictly speaking, IEnumerable&lt;KeyValuePair&lt;TItem,float&gt;&gt;)
@@ -215,6 +220,11 @@ This method is an <code>O(n)</code> operation, where <code>n</code> is number of
 <h3 id="a-idbinary-search-hrefbinary-search-binary-search-weightedselectmethodbinary-a"><a id="binary-search" href="#binary-search"> Binary Search (<code>WeightedSelectMethod.Binary</code>) </a></h3>
 <p>The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights.</p>
 <p>It has an additional storage cost of <code>O(n)</code>, but is accelerated by up to <code>O(log(n))</code> for each selection, where <code>n</code> is number of weights.</p>
+<h3 id="a-idalias-method-hrefalias-method-alias-method-weightedselectmethodalias-a"><a id="alias-method" href="#alias-method"> Alias Method (<code>WeightedSelectMethod.Alias</code>) </a></h3>
+<p>The fastest algorithm.</p>
+<p>It takes <code>O(n)</code> run time to set up, but the selection is performed in <code>O(1)</code> run time,
+where <code>n</code> is number of weights.</p>
+<p>Therefore, this is a very effective algorithm for selecting multiple items.</p>
 <h1 id="a-idauthor-info-hrefauthor-info--author-info-a"><a id="author-info" href="#author-info"> 📔 Author Info </a></h1>
 <p>Hiroya Aramaki is a indie game developer in Japan.</p>
 <ul>

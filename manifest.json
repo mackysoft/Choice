@@ -148,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "JKIbS+MJf6iofTpplc85RMX27DlhezDXqwfZkLaUZzQ="
+          "hash": "q9hACxMaDdH5D98I9eGeDq9Cn+SbfOIAvAptL0EZ3yI="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "TiCt+CZBsph2/Vy4gI2y6XKik/N3GDKQi0J8zUYRICo="
+          "hash": "hXuW7jwru8uLmwGrDiY14DO9ioVQinHty8WVMOltY/U="
         }
       },
       "is_incremental": false,
