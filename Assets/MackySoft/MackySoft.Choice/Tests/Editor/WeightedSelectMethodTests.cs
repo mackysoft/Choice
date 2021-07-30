@@ -49,6 +49,27 @@ namespace MackySoft.Choice.Tests {
 		}
 
 		[Test]
+		public void Alias_ReturnValidValue ([Random(0f,1f,10)] float value) {
+			var source = ItemEnumerableGenerator.GenerateEnumerable(100).ToArray();
+			var weightedSelector = source.ToWeightedSelector(x => x.item,x => x.weight,WeightedSelectMethod.Alias);
+			Assert.IsNotNull(weightedSelector.SelectItem(value));
+		}
+
+		[Test, Repeat(100)]
+		public void Alias_ReturnValidValue_0 () {
+			var source = ItemEnumerableGenerator.GenerateEnumerable(100).ToArray();
+			var weightedSelector = source.ToWeightedSelector(x => x.item,x => x.weight,WeightedSelectMethod.Alias);
+			Assert.AreSame(weightedSelector.FirstOrDefault(p => p.Value > 0f).Key,weightedSelector.SelectItem(0f));
+		}
+
+		[Test, Repeat(100)]
+		public void Alias_ReturnValidValue_1 () {
+			var source = ItemEnumerableGenerator.GenerateEnumerable(100).ToArray();
+			var weightedSelector = source.ToWeightedSelector(x => x.item,x => x.weight,WeightedSelectMethod.Alias);
+			Assert.AreSame(source.LastOrDefault(x => x.weight > 0f).item,weightedSelector.SelectItem(1f));
+		}
+
+		[Test]
 		[Description(
 			"Compare the results of all algorithms and find the algorithm that returned unexpected value.\n" +
 			"This test is based on the assumption that linear scan will always return the expected value."

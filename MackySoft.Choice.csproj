@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\IWeightedSelector.cs" />
+    <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\WeightedSelectMethod\AliasWeightedSelectMethod.cs" />
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\EnumerableConversion.cs" />
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\WeightedSelector\EmptyWeightedSelector.cs" />
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\Internal\RuntimeHelpers.cs" />

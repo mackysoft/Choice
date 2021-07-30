@@ -39,6 +39,14 @@ namespace MackySoft.Choice {
 		/// </summary>
 		public static IWeightedSelectMethod Binary => new BinaryWeightedSelectMethod();
 
+		/// <summary>
+		/// <para> The fastest algorithm. </para>
+		/// <para> It takes O(n) run time to set up, but the selection is performed in O(1) run time, </para>
+		/// <para> where n is number of weights. </para>
+		/// <para> Therefore, this is a very effective algorithm for selecting multiple items. </para>
+		/// </summary>
+		public static IWeightedSelectMethod Alias => new AliasWeightedSelectMethod();
+
 	}
 
 }
