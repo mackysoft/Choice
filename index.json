@@ -1,8 +1,13 @@
 {
+  "api/MackySoft.Choice.AliasWeightedSelectMethod.html": {
+    "href": "api/MackySoft.Choice.AliasWeightedSelectMethod.html",
+    "title": "Class AliasWeightedSelectMethod | Choice",
+    "keywords": "Class AliasWeightedSelectMethod The fastest algorithm. It takes O(n) run time to set up, but the selection is performed in O(1) run time, where n is number of weights. Therefore, this is a very effective algorithm for selecting multiple items. Inheritance Object AliasWeightedSelectMethod Implements IWeightedSelectMethod Namespace : MackySoft.Choice Assembly : cs.temp.dll.dll Syntax public class AliasWeightedSelectMethod : IWeightedSelectMethod, IDisposable Methods Calculate(TemporaryArray<Single>) Declaration public void Calculate(TemporaryArray<float> weights) Parameters Type Name Description TemporaryArray < Single > weights Dispose() Declaration public void Dispose() Finalize() Declaration protected void Finalize() SelectIndex(TemporaryArray<Single>, Single) Declaration public int SelectIndex(TemporaryArray<float> weights, float value) Parameters Type Name Description TemporaryArray < Single > weights Single value Returns Type Description Int32 Implements IWeightedSelectMethod"
+  },
   "api/MackySoft.Choice.html": {
     "href": "api/MackySoft.Choice.html",
     "title": "Namespace MackySoft.Choice | Choice",
-    "keywords": "Namespace MackySoft.Choice Classes WeightedSelectMethod WeightedSelector WeightedSelector<TItem> WeightedSelectorExtensions Interfaces IReadOnlyWeightedSelector<T> IWeightedSelectMethod IWeightedSelector<T>"
+    "keywords": "Namespace MackySoft.Choice Classes AliasWeightedSelectMethod The fastest algorithm. It takes O(n) run time to set up, but the selection is performed in O(1) run time, where n is number of weights. Therefore, this is a very effective algorithm for selecting multiple items. WeightedSelectMethod WeightedSelector WeightedSelector<TItem> WeightedSelectorExtensions Interfaces IReadOnlyWeightedSelector<T> IWeightedSelectMethod IWeightedSelector<T>"
   },
   "api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html": {
     "href": "api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html",
@@ -22,7 +27,7 @@
   "api/MackySoft.Choice.WeightedSelectMethod.html": {
     "href": "api/MackySoft.Choice.WeightedSelectMethod.html",
     "title": "Class WeightedSelectMethod | Choice",
-    "keywords": "Class WeightedSelectMethod Inheritance Object WeightedSelectMethod Namespace : MackySoft.Choice Assembly : cs.temp.dll.dll Syntax public static class WeightedSelectMethod Properties Binary The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights. It has an additional storage cost of O(n), but is accelerated by up to O(log(n)) for each selection, where n is number of weights. Declaration public static IWeightedSelectMethod Binary { get; } Property Value Type Description IWeightedSelectMethod Linear The simplest algorithm that walks linearly along the weights. This method is an O(n) operation, where n is number of weights. Declaration public static IWeightedSelectMethod Linear { get; } Property Value Type Description IWeightedSelectMethod"
+    "keywords": "Class WeightedSelectMethod Inheritance Object WeightedSelectMethod Namespace : MackySoft.Choice Assembly : cs.temp.dll.dll Syntax public static class WeightedSelectMethod Properties Alias The fastest algorithm. It takes O(n) run time to set up, but the selection is performed in O(1) run time, where n is number of weights. Therefore, this is a very effective algorithm for selecting multiple items. Declaration public static IWeightedSelectMethod Alias { get; } Property Value Type Description IWeightedSelectMethod Binary The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights. It has an additional storage cost of O(n), but is accelerated by up to O(log(n)) for each selection, where n is number of weights. Declaration public static IWeightedSelectMethod Binary { get; } Property Value Type Description IWeightedSelectMethod Linear The simplest algorithm that walks linearly along the weights. This method is an O(n) operation, where n is number of weights. Declaration public static IWeightedSelectMethod Linear { get; } Property Value Type Description IWeightedSelectMethod"
   },
   "api/MackySoft.Choice.WeightedSelector.html": {
     "href": "api/MackySoft.Choice.WeightedSelector.html",

@@ -7,6 +7,70 @@ references:
   commentId: N:MackySoft.Choice
   fullName: MackySoft.Choice
   nameWithType: MackySoft.Choice
+- uid: MackySoft.Choice.AliasWeightedSelectMethod
+  name: AliasWeightedSelectMethod
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html
+  commentId: T:MackySoft.Choice.AliasWeightedSelectMethod
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod
+  nameWithType: AliasWeightedSelectMethod
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.Calculate(TemporaryArray{System.Single})
+  name: Calculate(TemporaryArray<Single>)
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_Calculate_TemporaryArray_System_Single__
+  commentId: M:MackySoft.Choice.AliasWeightedSelectMethod.Calculate(TemporaryArray{System.Single})
+  name.vb: Calculate(TemporaryArray(Of Single))
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.Calculate(TemporaryArray<System.Single>)
+  fullName.vb: MackySoft.Choice.AliasWeightedSelectMethod.Calculate(TemporaryArray(Of System.Single))
+  nameWithType: AliasWeightedSelectMethod.Calculate(TemporaryArray<Single>)
+  nameWithType.vb: AliasWeightedSelectMethod.Calculate(TemporaryArray(Of Single))
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.Calculate*
+  name: Calculate
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_Calculate_
+  commentId: Overload:MackySoft.Choice.AliasWeightedSelectMethod.Calculate
+  isSpec: "True"
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.Calculate
+  nameWithType: AliasWeightedSelectMethod.Calculate
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.Dispose
+  name: Dispose()
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_Dispose
+  commentId: M:MackySoft.Choice.AliasWeightedSelectMethod.Dispose
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.Dispose()
+  nameWithType: AliasWeightedSelectMethod.Dispose()
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.Dispose*
+  name: Dispose
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_Dispose_
+  commentId: Overload:MackySoft.Choice.AliasWeightedSelectMethod.Dispose
+  isSpec: "True"
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.Dispose
+  nameWithType: AliasWeightedSelectMethod.Dispose
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.Finalize
+  name: Finalize()
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_Finalize
+  commentId: M:MackySoft.Choice.AliasWeightedSelectMethod.Finalize
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.Finalize()
+  nameWithType: AliasWeightedSelectMethod.Finalize()
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.Finalize*
+  name: Finalize
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_Finalize_
+  commentId: Overload:MackySoft.Choice.AliasWeightedSelectMethod.Finalize
+  isSpec: "True"
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.Finalize
+  nameWithType: AliasWeightedSelectMethod.Finalize
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex(TemporaryArray{System.Single},System.Single)
+  name: SelectIndex(TemporaryArray<Single>, Single)
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_SelectIndex_TemporaryArray_System_Single__System_Single_
+  commentId: M:MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex(TemporaryArray{System.Single},System.Single)
+  name.vb: SelectIndex(TemporaryArray(Of Single), Single)
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex(TemporaryArray<System.Single>, System.Single)
+  fullName.vb: MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex(TemporaryArray(Of System.Single), System.Single)
+  nameWithType: AliasWeightedSelectMethod.SelectIndex(TemporaryArray<Single>, Single)
+  nameWithType.vb: AliasWeightedSelectMethod.SelectIndex(TemporaryArray(Of Single), Single)
+- uid: MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex*
+  name: SelectIndex
+  href: api/MackySoft.Choice.AliasWeightedSelectMethod.html#MackySoft_Choice_AliasWeightedSelectMethod_SelectIndex_
+  commentId: Overload:MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex
+  isSpec: "True"
+  fullName: MackySoft.Choice.AliasWeightedSelectMethod.SelectIndex
+  nameWithType: AliasWeightedSelectMethod.SelectIndex
 - uid: MackySoft.Choice.IReadOnlyWeightedSelector`1
   name: IReadOnlyWeightedSelector<T>
   href: api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html
@@ -86,6 +150,19 @@ references:
   commentId: T:MackySoft.Choice.WeightedSelectMethod
   fullName: MackySoft.Choice.WeightedSelectMethod
   nameWithType: WeightedSelectMethod
+- uid: MackySoft.Choice.WeightedSelectMethod.Alias
+  name: Alias
+  href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Alias
+  commentId: P:MackySoft.Choice.WeightedSelectMethod.Alias
+  fullName: MackySoft.Choice.WeightedSelectMethod.Alias
+  nameWithType: WeightedSelectMethod.Alias
+- uid: MackySoft.Choice.WeightedSelectMethod.Alias*
+  name: Alias
+  href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Alias_
+  commentId: Overload:MackySoft.Choice.WeightedSelectMethod.Alias
+  isSpec: "True"
+  fullName: MackySoft.Choice.WeightedSelectMethod.Alias
+  nameWithType: WeightedSelectMethod.Alias
 - uid: MackySoft.Choice.WeightedSelectMethod.Binary
   name: Binary
   href: api/MackySoft.Choice.WeightedSelectMethod.html#MackySoft_Choice_WeightedSelectMethod_Binary
