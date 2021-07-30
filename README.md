@@ -34,6 +34,9 @@ Great introduction article on Weighted Random Select: https://blog.bruce-hill.co
 - [📥 Installation](#installation)
 - [🔰 Usage](#usage)
   - [ToWeightedSelector Overloads](#toweightedselector-overloads)
+    - [from weighted entry pattern](#from-weighted-entry)
+    - [from weighted item pattern](#from-weighted-item)
+    - [from Dictionary<Item,float> pattern](#from-dictionary)
   - [LINQ](#linq)
   - [Algorithms](#algorithms)
     - [Linear Scan](#linear-scan)
@@ -148,7 +151,7 @@ public IWeightedSelector<WeightedItem> WeightedItemPattern () {
 }
 ```
 
-### <a id="from-dictionary" href="#from-dictionary"> from `Dictionary<Item,float>` </a>
+### <a id="from-dictionary" href="#from-dictionary"> from `Dictionary<TItem,float>` pattern </a>
 
 ```cs
 public class Item {
