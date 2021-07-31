@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Choice - Weighted Random Selector | Choice </title>
+    <title> Speed Measurement  | Choice </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Choice - Weighted Random Selector | Choice ">
+    <meta name="title" content=" Speed Measurement  | Choice ">
     <meta name="generator" content="docfx 2.58.0.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="">
+    <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -67,171 +67,18 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="choice---weighted-random-selector">Choice - Weighted Random Selector</h1>
-
-<p><strong>Created by Hiroya Aramaki (<a href="https://twitter.com/makihiro_dev">Makihiro</a>)</strong></p>
-<p><a href="https://github.com/mackysoft/Choice/actions/workflows/tests.yaml"><img src="https://github.com/mackysoft/Choice/actions/workflows/tests.yaml/badge.svg" alt="Tests"></a>
-<a href="https://github.com/mackysoft/Choice/actions/workflows/build.yaml"><img src="https://github.com/mackysoft/Choice/actions/workflows/build.yaml/badge.svg" alt="Build"></a>
-<a href="https://github.com/mackysoft/Choice/releases"><img src="https://img.shields.io/github/v/release/mackysoft/Choice" alt="Release"></a>
-<a href="https://openupm.com/packages/com.mackysoft.choice/"><img src="https://img.shields.io/npm/v/com.mackysoft.choice?label=openupm&amp;registry_uri=https://package.openupm.com" alt="openupm"></a></p>
-<h2 id="what-is-weighted-random-selector-">What is Weighted Random Selector ?</h2>
-<p>Weighted Random Selector is an algorithm for randomly selecting elements based on their weights.</p>
-<p>For example.</p>
-<ul>
-<li>Drop items based on rarity.</li>
-<li>Events that occur with a certain probability</li>
-</ul>
-<p>It can be used to determine things with probability.</p>
-<p>Choice is a library that was created to make it easier to implement.</p>
-<pre><code class="lang-cs">// This is the simplest usage.
-var randomSelectedItem = items
-    .ToWeightedSelector(item =&gt; item.weight)
-    .SelectItemWithUnityRandom();
-</code></pre><p>Great introduction article on Weighted Random Select: <a href="https://blog.bruce-hill.com/a-faster-weighted-random-choice">https://blog.bruce-hill.com/a-faster-weighted-random-choice</a></p>
-<h2 id="a-idindex-hrefindex-table-of-contents-a"><a id="index" href="#index"> Table of Contents </a></h2>
-<ul>
-<li><a href="#installation">📥 Installation</a></li>
-<li><a href="#usage">🔰 Usage</a><ul>
-<li><a href="#toweightedselector-overloads">ToWeightedSelector Overloads</a><ul>
-<li><a href="#from-weighted-entry">from weighted entry pattern</a></li>
-<li><a href="#from-weighted-item">from weighted item pattern</a></li>
-<li><a href="#from-dictionary">from Dictionary&lt;Item,float&gt; pattern</a></li>
-</ul>
-</li>
-<li><a href="#linq">LINQ</a></li>
-<li><a href="#algorithms">Algorithms</a><ul>
-<li><a href="#linear-scan">Linear Scan</a></li>
-<li><a href="#binary-search">Binary Search</a></li>
-<li><a href="#alias-method">Alias Method</a></li>
-<li><a href="#speed-measurement">Speed Measurement</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#author-info">📔 Author Info</a></li>
-<li><a href="#license">📜 License</a></li>
-</ul>
-<h1 id="a-idinstallation-hrefinstallation--installation-a"><a id="installation" href="#installation"> 📥 Installation </a></h1>
-<p>Download any version from releases.</p>
-<p>Releases: <a href="https://github.com/mackysoft/Choice/releases">https://github.com/mackysoft/Choice/releases</a></p>
-<h3 id="install-via-git-url">Install via git URL</h3>
-<p>Or, you can add this package by opening PackageManager and entering</p>
-<p><code>https://github.com/mackysoft/Choice.git?path=Assets/MackySoft/MackySoft.Choice</code></p>
-<p>from the <code>Add package from git URL</code> option.</p>
-<h3 id="install-via-open-upm">Install via Open UPM</h3>
-<p>Or, you can install this package from the <a href="https://openupm.com/packages/com.mackysoft.choice/">Open UPM</a> registry.</p>
-<p>More details <a href="https://openupm.com/">here</a>.</p>
-<pre><code>openupm add com.mackysoft.choice
-</code></pre><h1 id="a-idusage-hrefrequirements--usage-a"><a id="usage" href="#requirements"> 🔰 Usage </a></h1>
-<pre><code class="lang-cs">// To use Choice, add this namespace.
-using MackySoft.Choice;
-
-public class WeightedItem {
-    public string id;
-    public float weight;
-}
-
-public WeightedItem SelectItem () {
-    // Prepare weighted items.
-    var items = new WeightedItem[] {
-        new WeightedItem { id = &quot;🍒&quot;, weight = 8f },
-        new WeightedItem { id = &quot;🍏&quot;, weight = 4f },
-        new WeightedItem { id = &quot;🍍&quot;, weight = 0f },
-        new WeightedItem { id = &quot;🍇&quot;, weight = 6f },
-        new WeightedItem { id = &quot;🍊&quot;, weight = -1f }
-    };
-
-    // Create the WeightedSelector.
-    var weightedSelector = items.ToWeightedSelector(item =&gt; item.weight);
-
-    // The probability of each item being selected,
-    // 🍒 is 44%, 🍏 is 22%, and 🍇 is 33%.
-    // 🍍 and 🍊 will never be selected because their weights are less or equal to 0.
-    return weightedSelector.SelectItemWithUnityRandom();
-    // Same as weightedSelector.SelectItem(UnityEngine.Random.value);
-}
-</code></pre><h2 id="a-idtoweightedselector-overloads-hreftoweightedselector-overloads-toweightedselector-overloads--a"><a id="toweightedselector-overloads" href="#toweightedselector-overloads"> <code>ToWeightedSelector</code> Overloads  </a></h2>
-<p>The <code>ToWeightedSelector</code> method has many overloads and can be used for a variety of patterns.</p>
-<h3 id="a-idfrom-weighted-entry-hreffrom-weighted-entry-from-weighted-entry-pattern-a"><a id="from-weighted-entry" href="#from-weighted-entry"> from weighted entry pattern </a></h3>
-<pre><code class="lang-cs">public struct ItemEntry {
-    public Item item;
-    public float weight;
-}
-
-public IWeightedSelector&lt;Item&gt; WeightedEntryPattern () {
-    var entries = new ItemEntry[] {
-        new ItemEntry { item = new Item { id = &quot;🍒&quot; }, weight = 1f },
-        new ItemEntry { item = new Item { id = &quot;🍏&quot; }, weight = 5f },
-        new ItemEntry { item = new Item { id = &quot;🍍&quot; }, weight = 3f }
-    };
-
-    // Create a WeightedSelector by selecting item and weight from entry respectively.
-    return entries.ToWeightedSelector(
-        itemSelector: entry =&gt; entry.item,
-        weightSelector: entry =&gt; entry.weight
-    );
-}
-</code></pre><h3 id="a-idfrom-weighted-item-hreffrom-weighted-item-from-weighted-item-pattern-a"><a id="from-weighted-item" href="#from-weighted-item"> from weighted item pattern </a></h3>
-<pre><code class="lang-cs">public class WeightedItem {
-    public string id;
-    public float weight;
-}
-
-public IWeightedSelector&lt;WeightedItem&gt; WeightedItemPattern () {
-    var items = new WeightedItem[] {
-        new WeightedItem { id = &quot;🍒&quot;, weight = 1f },
-        new WeightedItem { id = &quot;🍏&quot;, weight = 5f },
-        new WeightedItem { id = &quot;🍍&quot;, weight = 3f }
-    };
-
-    // Create a WeightedSelector using the weight of the WeightedItem.
-    return fromWeightedItem = items.ToWeightedSelector(weightSelector: item =&gt; item.weight);
-}
-</code></pre><h3 id="a-idfrom-dictionary-hreffrom-dictionary-from-dictionarytitemfloat-pattern-a"><a id="from-dictionary" href="#from-dictionary"> from <code>Dictionary&lt;TItem,float&gt;</code> pattern </a></h3>
-<pre><code class="lang-cs">public class Item {
-    public string id;
-}
-
-public IWeightedSelector&lt;Item&gt; DictionaryPattern () {
-    // This need a Dictionary&lt;TItem,float&gt;. (Strictly speaking, IEnumerable&lt;KeyValuePair&lt;TItem,float&gt;&gt;)
-    var dictionary = new Dictionary&lt;Item,float&gt;(
-        { new Item { id = &quot;🍒&quot; }, 1f },
-        { new Item { id = &quot;🍏&quot; }, 5f },
-        { new Item { id = &quot;🍍&quot; }, 3f }
-    );
-
-    // Create a WeightedSelector with the dictionary key as item and value as weight.
-    return dictionary.ToWeightedSelector();
-}
-</code></pre><h2 id="a-idlinq-hreflinq-linq-a"><a id="linq" href="#linq"> LINQ </a></h2>
-<p>Since the <code>ToWeightedSelector</code> method is defined as an extension of <code>IEnumerable&lt;T&gt;</code>, it can be connected from the LINQ query operators.</p>
-<pre><code class="lang-cs">var randomSelectedItem = items
-    .Where(item =&gt; item != null) // null check
-    .ToWeightedSelector(item =&gt; item.weight)
-    .SelectItemWithUnityRandom();
-</code></pre><h2 id="a-idalgorithms-hrefalgorithms-algorithms-a"><a id="algorithms" href="#algorithms"> Algorithms </a></h2>
-<p>When creating a WeightedSelector, you can specify the <code>IWeightedSelectMethod</code>.</p>
-<pre><code class="lang-cs">var weightedSelector = items.ToWeightedSelector(
-    item =&gt; item.weight,
-    WeightedSelectMethod.Binary // Use the binary search algorithm.
-);
-</code></pre><p>All <code>ToWeightedSelector</code> methods can specify <code>IWeightedSelectMethod</code>.</p>
-<p>If this is not specified, the linear scan algorithm will be used automatically.</p>
-<h3 id="a-idlinear-scan-hreflinear-scan-linear-scan-weightedselectmethodlinear-a"><a id="linear-scan" href="#linear-scan"> Linear Scan (<code>WeightedSelectMethod.Linear</code>) </a></h3>
-<p>The simplest algorithm that walks linearly along the weights.
-This method is an <code>O(n)</code> operation, where <code>n</code> is number of weights.</p>
-<h3 id="a-idbinary-search-hrefbinary-search-binary-search-weightedselectmethodbinary-a"><a id="binary-search" href="#binary-search"> Binary Search (<code>WeightedSelectMethod.Binary</code>) </a></h3>
-<p>The binary search algorithm that is faster than linear scan by preprocessing to store the current sum of weights.</p>
-<p>It has an additional storage cost of <code>O(n)</code>, but is accelerated by up to <code>O(log(n))</code> for each selection, where <code>n</code> is number of weights.</p>
-<h3 id="a-idalias-method-hrefalias-method-alias-method-weightedselectmethodalias-a"><a id="alias-method" href="#alias-method"> Alias Method (<code>WeightedSelectMethod.Alias</code>) </a></h3>
-<p>The fastest algorithm.</p>
-<p>It takes <code>O(n)</code> run time to set up, but the selection is performed in <code>O(1)</code> run time,
-where <code>n</code> is number of weights.</p>
-<p>Therefore, this is a very effective algorithm for selecting multiple items.</p>
 <h2 id="a-idspeed-measurement-hrefspeed-measurement-speed-measurement-a"><a id="speed-measurement" href="#speed-measurement"> Speed Measurement </a></h2>
+
 <h3 id="a-id1-items-href1-items-1-items-a"><a id="1-items" href="#1-items"> 1 items </a></h3>
 <p><img src="https://user-images.githubusercontent.com/13536348/127739858-60f05a16-6e3b-42f6-b7f2-b4b106eb3dfa.png" alt="Speed measurement of Weighted Random Selection Algorithms  (1 items)"></p>
 <table>
@@ -852,14 +699,6 @@ where <code>n</code> is number of weights.</p>
 </tr>
 </tbody>
 </table>
-<h1 id="a-idauthor-info-hrefauthor-info--author-info-a"><a id="author-info" href="#author-info"> 📔 Author Info </a></h1>
-<p>Hiroya Aramaki is a indie game developer in Japan.</p>
-<ul>
-<li>Blog: <a href="https://mackysoft.net/blog">https://mackysoft.net/blog</a></li>
-<li>Twitter: <a href="https://twitter.com/makihiro_dev">https://twitter.com/makihiro_dev</a></li>
-</ul>
-<h1 id="a-idlicense-hreflicense--license-a"><a id="license" href="#license"> 📜 License </a></h1>
-<p>This library is under the MIT License.</p>
 </article>
           </div>
           
@@ -888,8 +727,8 @@ where <code>n</code> is number of weights.</p>
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

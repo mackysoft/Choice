@@ -172,7 +172,31 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "42bA7qm4qZ3wqly992juwHaEspSxlcqWqtXohFGIoq4="
+          "hash": "jNUj2DUcCa+ID06g3VoGMSh4+xCpc5pNuHclrCVJRgk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/speed-measurement.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/speed-measurement.html",
+          "hash": "HHSWfmmgykylIWmSNA3VcX4UxmN9FVOncEkRvXNYs/Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "sTMZOocEF38xrKHZw3rKypWfYyKZQeaXfrtdFx9yJn8="
         }
       },
       "is_incremental": false,
@@ -184,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "6xQyfcHvZhHd9GcsyspYT4j53gKtQlKWEzdOetL5fHc="
+          "hash": "lO4S2/kR1Tb3QUj1RjE9tinfk0ZRkdCYSIG6DbZ/lxQ="
         }
       },
       "is_incremental": false,
@@ -205,7 +229,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
