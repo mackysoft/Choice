@@ -1,3 +1,5 @@
+- name: Manual
+  href: manual/
 - name: Scripting API
   href: api/
 - name: Changelog

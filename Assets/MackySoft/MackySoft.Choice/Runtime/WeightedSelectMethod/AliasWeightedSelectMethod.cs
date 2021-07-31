@@ -51,7 +51,15 @@ namespace MackySoft.Choice {
 			for (int i = 0;i < size;i++) {
 				m_Aliases[i] = new Alias(-1,1f);
 			}
-			
+
+			if (size == 0) {
+				return;
+			}
+			if (size == 1) {
+				m_Aliases[0] = new Alias(0,1f);
+				return;
+			}
+
 			using (var smalls = TemporaryArray<Alias>.CreateAsList(size))
 			using (var bigs = TemporaryArray<Alias>.CreateAsList(size)) {
 				float average = Sum(weights) / size;
