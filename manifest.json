@@ -24,18 +24,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MackySoft.Choice.AliasWeightedSelectMethod.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MackySoft.Choice.AliasWeightedSelectMethod.html",
-          "hash": "rN4oJP48xW5rFT+8bD4p4VuI6yCQmUByIQyeUJWClvc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MackySoft.Choice.IReadOnlyWeightedSelector-1.yml",
       "output": {
         ".html": {
@@ -124,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.html",
-          "hash": "CBjWRXxxiZWuhbpwoxD0tcAIfIO9OAEvszDgMb+LSmc="
+          "hash": "SdYzAtH9Daer7/a1zu9zBEKxCDNtXsjZYxH2bPfowsA="
         }
       },
       "is_incremental": false,
@@ -136,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6o0GRbRowYSRMR5lhlchQCknzi6JjNcIdEea39LwBFs="
+          "hash": "43cvLC5v7ljDEtFKGNm8Maj5AQblYi3FPiJ9L7jsM+U="
         }
       },
       "is_incremental": false,
@@ -235,7 +223,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 8,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
