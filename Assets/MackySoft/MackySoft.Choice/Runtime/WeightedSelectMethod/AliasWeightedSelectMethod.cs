@@ -10,7 +10,7 @@ namespace MackySoft.Choice {
 	/// <para> where n is number of weights. </para>
 	/// <para> Therefore, this is a very effective algorithm for selecting multiple items. </para>
 	/// </summary>
-	public class AliasWeightedSelectMethod : IWeightedSelectMethod, IDisposable {
+	internal sealed class AliasWeightedSelectMethod : IWeightedSelectMethod, IDisposable {
 
 		struct Alias {
 
