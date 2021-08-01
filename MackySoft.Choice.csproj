@@ -69,6 +69,7 @@
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\Internal\ArrayPool.cs" />
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\WeightedSelectMethod\LinearWeightedSelectMethod.cs" />
     <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\WeightedSelectMethod\BinaryWeightedSelectMethod.cs" />
+    <Compile Include="Assets\MackySoft\MackySoft.Choice\Runtime\WeightedSelectMethod\IntegerAliasWeightedSelectMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MackySoft\MackySoft.Choice\Runtime\MackySoft.Choice.asmdef" />
