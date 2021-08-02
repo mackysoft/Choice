@@ -73,6 +73,10 @@ namespace MackySoft.Choice {
 					}
 				}
 
+				if ((smalls.Length == 0) || (bigs.Length == 0)) {
+					return;
+				}
+
 				int si = 0, bi = 0;
 				Alias? small = smalls[0];
 				Alias? big = bigs[0];
