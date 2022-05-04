@@ -2,10 +2,7 @@
 
 **Created by Hiroya Aramaki ([Makihiro](https://twitter.com/makihiro_dev))**
 
-[![Tests](https://github.com/mackysoft/Choice/actions/workflows/tests.yaml/badge.svg)](https://github.com/mackysoft/Choice/actions/workflows/tests.yaml)
-[![Build](https://github.com/mackysoft/Choice/actions/workflows/build.yaml/badge.svg)](https://github.com/mackysoft/Choice/actions/workflows/build.yaml)
-[![Release](https://img.shields.io/github/v/release/mackysoft/Choice)](https://github.com/mackysoft/Choice/releases)
-[![openupm](https://img.shields.io/npm/v/com.mackysoft.choice?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.mackysoft.choice/)
+[![Tests](https://github.com/mackysoft/Choice/actions/workflows/tests.yaml/badge.svg)](https://github.com/mackysoft/Choice/actions/workflows/tests.yaml) [![Build](https://github.com/mackysoft/Choice/actions/workflows/build.yaml/badge.svg)](https://github.com/mackysoft/Choice/actions/workflows/build.yaml) [![Release](https://img.shields.io/github/v/release/mackysoft/Choice)](https://github.com/mackysoft/Choice/releases) [![openupm](https://img.shields.io/npm/v/com.mackysoft.choice?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.mackysoft.choice/)
 
 ## What is Weighted Random Selector ?
 
