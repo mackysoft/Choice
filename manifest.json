@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.IReadOnlyWeightedSelector-1.html",
-          "hash": "km09C2iwO+Ng3MIRqeU20c3cUDcdVVTZwhwN+fP7vkc="
+          "hash": "sd1ASyGkcx6/QBGTluIBddOCU7NzXRxnWkgbxPr5Qrk="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.IWeightedSelectMethod.html",
-          "hash": "jLRv0JQqmD+K5kkIl21eEuVG3dTlWbk7D5tSyEpfLTg="
+          "hash": "ho25OnzloUIQnsu0e6tH9goz5bx5gWFXw2eODRXmZB8="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.IWeightedSelector-1.html",
-          "hash": "QPRIvA1dPOQ1UVnu7AGg16iRsfDEPOZWXg/z9dDTuzw="
+          "hash": "sIJKPdvwZWi5GypMdnEp+HpT/z0Sg8LCs0GRi48NwnQ="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.WeightedSelectMethod.html",
-          "hash": "S5AwMUy+no8LmG/qAGmm2UXzGFnoj+l9pBVZfRYScns="
+          "hash": "WtNlAL3y3g99sLFNj5AkRdsnAAaqTGy2fJkO42ixZR0="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.WeightedSelector-1.html",
-          "hash": "Gjj8+neBe7dCxDSdxKcaQOADVyc6JpdlUqhaniGjIPA="
+          "hash": "MGijsUwlCTm0OY6fk4fh7HAnal5toqnlPtagcRcOuX4="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.WeightedSelector.html",
-          "hash": "VlZdnPoNG4c0N6KIF1ubOu314MNZyLzXLbIDzAVoSdE="
+          "hash": "PiovJEgWliBJ4hEKkM1owBb1TVcLHf07IN4RNCagLxs="
         }
       },
       "is_incremental": false,
@@ -100,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.WeightedSelectorExtensions.html",
-          "hash": "7lI6rP+ECKutkckT0ajM10i5REx2g1PLtWeacf6Kn00="
+          "hash": "sT95k+/FA6WOSwT2kVj+dqWE4Xd/hc9nDsNEj1DE6KA="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MackySoft.Choice.html",
-          "hash": "EyPtc/EZcfTg/aTjp4fgfsM0Va78Eu12JTdlYyR2uug="
+          "hash": "OQkj3FuKKkbOxTkkVQvwD8UUHICwKVsMZszkxg5Kib0="
         }
       },
       "is_incremental": false,
@@ -136,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "Sdc28UeUDQ+QHYtkAmBPQIqrPOfFceE8P3d84uaaeh8="
+          "hash": "PQ2pM3BGQov+ae1DUGUHcHJSXIXY0QYoc4YjxaB23vA="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "df2Wl7fBlBRCNehwRwBVHASdUfgOqpAcrBErNh2BKtA="
+          "hash": "8h0afWrdsGO0Qb0X0KZ/lIBn6SP4pwcfYvIdWJUH2f0="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/speed-measurement.html",
-          "hash": "Pj/7Pl58QCQDI0MIH6vL46cYjVFn8kEEltyq8Q6z7KA="
+          "hash": "T4zfvXy5be+0RRGiDZcfcB7H/90z2bj3K6JXGtrfbvE="
         }
       },
       "is_incremental": false,
