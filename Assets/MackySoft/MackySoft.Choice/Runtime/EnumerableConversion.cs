@@ -38,13 +38,8 @@ namespace MackySoft.Choice.Internal {
 
 			int count = items.Length;
 			weights = TemporaryArray<float>.Create(count);
-			for (int i = 0;items.Capacity > i;i++) {
-				if (count > i) {
-					weights[i] = weightSelector(items[i]);
-				} else {
-					items[i] = default;
-					weights[i] = 0f;
-				}
+			for (int i = 0;count > i;i++) {
+				weights[i] = weightSelector(items[i]);
 			}
 		}
 
@@ -92,15 +87,10 @@ namespace MackySoft.Choice.Internal {
 			int count = source.Count;
 			items = TemporaryArray<TItem>.Create(count);
 			weights = TemporaryArray<float>.Create(count);
-			for (int i = 0;weights.Capacity > i;i++) {
-				if (count > i) {
-					TSource element = source[i];
-					items[i] = itemSelector(element);
-					weights[i] = weightSelector(element);
-				} else {
-					items[i] = default;
-					weights[i] = 0f;
-				}
+			for (int i = 0;count > i;i++) {
+				TSource element = source[i];
+				items[i] = itemSelector(element);
+				weights[i] = weightSelector(element);
 			}
 		}
 
@@ -114,15 +104,10 @@ namespace MackySoft.Choice.Internal {
 			int count = source.Count;
 			items = TemporaryArray<TItem>.Create(count);
 			weights = TemporaryArray<float>.Create(count);
-			for (int i = 0;weights.Capacity > i;i++) {
-				if (count > i) {
-					TSource element = source[i];
-					items[i] = itemSelector(element);
-					weights[i] = weightSelector(element);
-				} else {
-					items[i] = default;
-					weights[i] = 0f;
-				}
+			for (int i = 0;count > i;i++) {
+				TSource element = source[i];
+				items[i] = itemSelector(element);
+				weights[i] = weightSelector(element);
 			}
 		}
 
@@ -138,15 +123,10 @@ namespace MackySoft.Choice.Internal {
 			int count = sourceArray.Length;
 			items = TemporaryArray<TItem>.Create(count);
 			weights = TemporaryArray<float>.Create(count);
-			for (int i = 0;items.Capacity > i;i++) {
-				if (count > i) {
-					TSource element = sourceArray[i];
-					items[i] = itemSelector(element);
-					weights[i] = weightSelector(element);
-				} else {
-					items[i] = default;
-					weights[i] = 0f;
-				}
+			for (int i = 0;count > i;i++) {
+				TSource element = sourceArray[i];
+				items[i] = itemSelector(element);
+				weights[i] = weightSelector(element);
 			}
 		}
 
@@ -183,13 +163,8 @@ namespace MackySoft.Choice.Internal {
 
 			int i = 0;
 			foreach (var pair in source) {
-				if (count > i) {
-					items[i] = itemSelector(pair.Key);
-					weights[i] = pair.Value;
-				} else {
-					items[i] = default;
-					weights[i] = 0f;
-				}
+				items[i] = itemSelector(pair.Key);
+				weights[i] = pair.Value;
 				i++;
 			}
 		}
@@ -206,13 +181,8 @@ namespace MackySoft.Choice.Internal {
 
 			int i = 0;
 			foreach (var pair in source) {
-				if (count > i) {
-					items[i] = itemSelector(pair.Key);
-					weights[i] = pair.Value;
-				} else {
-					items[i] = default;
-					weights[i] = 0f;
-				}
+				items[i] = itemSelector(pair.Key);
+				weights[i] = pair.Value;
 				i++;
 			}
 		}
@@ -231,10 +201,6 @@ namespace MackySoft.Choice.Internal {
 				items.Add(itemSelector(pair.Key));
 				weights.Add(pair.Value);
 				count++;
-			}
-			for (int i = count;items.Capacity > i;i++) {
-				items[i] = default;
-				weights[i] = 0f;
 			}
 		}
 

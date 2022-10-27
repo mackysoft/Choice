@@ -41,6 +41,6 @@ jobs:
       - name: Build
         uses: game-ci/unity-builder@v2
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE_2020 }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE_2021 }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
