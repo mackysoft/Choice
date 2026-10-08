@@ -1,4 +1,7 @@
-﻿# Choice - Weighted Random Selector
+﻿> [!NOTE]
+> Choice is a legacy library. For new projects, use [Moira](https://github.com/mackysoft/Moira).
+
+# Choice - Weighted Random Selector
 
 **Created by Hiroya Aramaki ([Makihiro](https://twitter.com/makihiro_dev))**
 
