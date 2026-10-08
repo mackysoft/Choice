@@ -1,5 +1,9 @@
 ﻿> [!NOTE]
-> Choice is a legacy library. For new projects, use [Moira](https://github.com/mackysoft/Moira).
+> Choice is a legacy library. For new projects, use [Moira](https://github.com/mackysoft/Moira), a modern weighted random selection library for .NET.
+>
+> Moira offers a clearer, easier-to-use API, stronger input validation, and a wider range of features. It supports both fixed weighted distributions and quantity-limited draws, with APIs for inspecting and restoring the remaining counts.
+>
+> Its performance-focused design supports allocation-free selection and drawing, plus `Span<T>`-based batch operations that write directly into caller-owned buffers. Moira has no Unity dependency, so you can use it in Unity games and other .NET applications.
 
 # Choice - Weighted Random Selector
 
